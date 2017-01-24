@@ -10,6 +10,8 @@
 
 }
 
+/*Global a attributes*/
+
 a {
     text-decoration: none;
 }
@@ -21,27 +23,32 @@ a:visited {
 }
 
 a:focus,
-a:hover {
+a:hover,
+a:active {
     color: #F14848;
     outline: none;
 }
 
-a:active {
-    color: #F14848;
-}
+/*footer*/
 
 .site-footer a {
+    color: gray;
+}
+
+.bottom-nav > li > a {
     color: white;
 }
 
-.site-footer a:hover {
-    color: #F14848;
-}
+/*.site-footer a:hover {*/
+/*color: #F14848;*/
+/*}*/
 
-.footer-nav-list-1 a,
-.footer-nav-list-2 a {
-    color: rgb(122, 122, 122);
-}
+/*.footer-nav-list-1 a,*/
+/*.footer-nav-list-2 a {*/
+/*color: rgb(122, 122, 122);*/
+/*}*/
+
+/*The method above describes the other way of making the lower footer - all to color white and then target a few and turn grey*/
 
 footer {
     background-color: rgb(61, 61, 61);;
@@ -59,4 +66,15 @@ footer {
 
 .terms-privacy a:hover {
     color: rgb(255, 255, 255);
+}
+
+
+/*Backgrounds*/
+
+.primary-header {
+    background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+
 }
