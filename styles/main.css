@@ -1,4 +1,39 @@
-/*removing nav menu under 700px wide*/
+
+/*Font strategy*/
+
+html,
+body {
+    font: 100% 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.main-menu > ul > li {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-menu > ul
+
+/*Removing nav menu under 700px wide*/
 
 @media (max-width: 700px) {
 
@@ -29,13 +64,78 @@ a:active {
     outline: none;
 }
 
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+    *zoom: 1;
+}
+
+/*------------------------*/
+
+/*Buttons*/
+
+.button-one:link,
+.button-one:visited,
+.button-one:hover,
+.button-one:active,
+.button-one:focus {
+    background-color: #F14848;
+    padding: 12px;
+    border-radius: 25px;
+    color: #FFFEFE;
+}
+
+.button-two:link,
+.button-two:visited,
+.button-two:hover,
+.button-two:active,
+.button-two:focus {
+    background-color: #FFFEFE;
+    padding: 12px;
+    border-radius: 25px;
+    color: #F14848;
+}
+
+/*Download link*/
+
+.learn-more-links .download-link,
+.download-link:hover {
+    background-color: #F14848;
+    color: #FFFEFE
+}
+
+/*Your content, comigo's unique experience*/
+
+.your-content-comigo a {
+    background-color: #F14848;
+    color: #FFFEFE
+}
+
 /*footer*/
 
 .site-footer a {
     color: gray;
 }
 
-.bottom-nav > li > a {
+.site-footer a:hover {
+    color: #F14848;
+}
+
+.site-footer .bottom-nav > li > a {
     color: white;
 }
 
@@ -65,16 +165,111 @@ footer {
 }
 
 .terms-privacy a:hover {
-    color: rgb(255, 255, 255);
+    color: white;
 }
-
 
 /*Backgrounds*/
 
 .primary-header {
-    background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 1920px;
+    height: 745px;
+    background: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg") no-repeat center;
     background-size: auto 100%;
+}
 
+/*Service boxes section*/
+
+.service-box div {
+    display: inline-block;
+    height: 500px;
+}
+
+.services-box-1 {
+    background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, auto;
+    background-position: 0 0;
+    width: 50%;
+    float: left;
+}
+
+.services-box-2 {
+    background: url(../assets/comigo-assets/other/ic-stb-screens.png),url(../assets/comigo-assets/other/home-tv-service-bg2.png);
+    background-repeat: no-repeat, no-repeat;
+    width: 50%;
+    float: left;
+}
+
+.your-content-comigo {
+    clear: both;
+}
+
+/*Video section*/
+
+.background-video {
+    background: rgba(0, 0, 0, 5);
+}
+
+
+.your-content-comigo {
+    display: inline-block;
+}
+
+aside > img {
+    width: 600px;
+    height: auto;
+    float: left;
+
+}
+
+/*clearing float for next element*/
+
+aside > img:before,
+aside > img:after {
+    clear: both;
+}
+
+/*blog backgrounds*/
+
+.first-blog {
+    background-color: #F14848
+}
+
+.blog-pic span {
+    background-color: #F14848
+}
+
+.blog-pic {
+    display: inline-block;
+}
+
+.blog-pic li {
+    width: 16.6%;
+    height: 480px;
+    display: inline-table;
+}
+
+.blog-pic a {
+    display: block;
+    background: no-repeat center center;
+}
+
+.second-blog {
+    background: url(../assets/comigo-assets/blog/ibc_post_EI-750x508.png) no-repeat center center;
+}
+
+.third-blog {
+    background: url(../assets/comigo-assets/blog/IMG_9294-750x563.jpeg) no-repeat center center;
+}
+
+.forth-blog {
+    background: url(../assets/comigo-assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat center center;
+}
+
+.fifth-blog {
+    background: url(../assets/comigo-assets/blog/post_tv_connect-750x508.jpeg) no-repeat center center;
+}
+
+.sixth-blog {
+    background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
 }
