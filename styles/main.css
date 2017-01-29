@@ -1,3 +1,6 @@
+* {
+    border: 2px solid black;
+}
 
 /*Font strategy*/
 
@@ -19,6 +22,7 @@ h2 {
 h3 {
     font-size: 2.3rem;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -26,9 +30,13 @@ h4 {
     font-weight: 300;
 }
 
-.main-menu > ul > li {
+.main-menu > ul li {
     font-size: 1rem;
     font-weight: bold;
+}
+
+.caps {
+    text-transform: uppercase;
 }
 
 .main-menu > ul
@@ -93,6 +101,7 @@ a:active {
 .button-one:hover,
 .button-one:active,
 .button-one:focus {
+    text-transform: uppercase;
     background-color: #F14848;
     padding: 12px;
     border-radius: 25px;
@@ -104,10 +113,30 @@ a:active {
 .button-two:hover,
 .button-two:active,
 .button-two:focus {
+    text-transform: uppercase;
     background-color: #FFFEFE;
     padding: 12px;
     border-radius: 25px;
     color: #F14848;
+}
+
+/*Header*/
+
+header {
+    background-color: White;
+    /*position: fixed;*/
+    width: 100%;
+    display: block;
+}
+
+/*Navigation header*/
+
+.main-menu li {
+    display: inline;
+}
+
+.main-menu li > ul {
+    display: none;
 }
 
 /*Download link*/
@@ -127,8 +156,28 @@ a:active {
 
 /*footer*/
 
+footer {
+    background-color: #3D3D3D;
+    background-size: cover;
+}
+
+.terms-privacy {
+    background-color: #1E2024;
+}
+.center,
+.bottom-center {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
 .site-footer a {
     color: gray;
+}
+
+.bottom-nav a {
+    text-transform: uppercase;
 }
 
 .site-footer a:hover {
@@ -150,9 +199,6 @@ a:active {
 
 /*The method above describes the other way of making the lower footer - all to color white and then target a few and turn grey*/
 
-footer {
-    background-color: rgb(61, 61, 61);;
-}
 
 .terms-privacy {
     color: rgb(99, 99, 99);
@@ -168,40 +214,41 @@ footer {
     color: white;
 }
 
-/*Backgrounds*/
+/*Primary Header*/
 
 .primary-header {
-    width: 1920px;
-    height: 745px;
-    background: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg") no-repeat center;
-    background-size: auto 100%;
-}
-
-/*Service boxes section*/
-
-.service-box div {
-    display: inline-block;
     height: 500px;
+    width: 1300px;
+    background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    line-height: 100%;
 }
 
-.services-box-1 {
-    background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50%, auto;
-    background-position: 0 0;
-    width: 50%;
-    float: left;
+.primary-header div {
+    padding-top: 125px;
+    color: white;
+    font-weight: normal;
 }
 
-.services-box-2 {
-    background: url(../assets/comigo-assets/other/ic-stb-screens.png),url(../assets/comigo-assets/other/home-tv-service-bg2.png);
-    background-repeat: no-repeat, no-repeat;
-    width: 50%;
-    float: left;
+/*Why Comgio*/
+
+.why-us {
+    text-align: center;
+    margin-bottom: 7rem;
 }
 
-.your-content-comigo {
-    clear: both;
+.why-us h3 {
+    line-height: 0.3rem;
+}
+
+.why-us span {
+    display: block;
+}
+
+.why-us a {
+
 }
 
 /*Video section*/
@@ -210,6 +257,35 @@ footer {
     background: rgba(0, 0, 0, 5);
 }
 
+/*Service boxes section*/
+
+.service-box {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.services-box-1 {
+    display: inline-block;
+    height: 596.8px;
+    background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
+    background-size: 50%, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, center center;
+    width: 49%;
+    text-align: center;
+}
+
+.services-box-2 {
+    display: inline-block;
+    height: 596.8px;
+    background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
+    background-size: 40%, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, center center;
+    width: 49%;
+    text-align: center;
+}
 
 .your-content-comigo {
     display: inline-block;
@@ -254,6 +330,10 @@ aside > img:after {
     background: no-repeat center center;
 }
 
+.blog span {
+    text-transform: uppercase;
+}
+
 .second-blog {
     background: url(../assets/comigo-assets/blog/ibc_post_EI-750x508.png) no-repeat center center;
 }
@@ -273,3 +353,25 @@ aside > img:after {
 .sixth-blog {
     background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
 }
+
+    /*Removing nav menu under 700px wide*/
+
+    @media (max-width: 700px) {
+
+        .main-menu {
+
+            display: none;
+
+        }
+
+    }
+
+
+    /*Responsive footer*/
+
+    @media(max-width: 990px) {
+        .center {
+            max-width: 660px;
+        }
+    }
+
