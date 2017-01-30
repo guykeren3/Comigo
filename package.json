@@ -1,0 +1,22 @@
+{
+  "name": "comigo",
+  "version": "1.0.0",
+  "description": "My awesome Comigo website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guykeren3/Comigo.git"
+  },
+  "author": "Guy Keren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guykeren3/Comigo/issues"
+  },
+  "homepage": "https://github.com/guykeren3/Comigo#readme",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}

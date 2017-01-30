@@ -10,17 +10,17 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: normal;
 }
 
 h3 {
-    font-size: 2.3rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -103,7 +103,7 @@ a:active {
 .button-one:focus {
     text-transform: uppercase;
     background-color: #F14848;
-    padding: 12px;
+    padding: 10px 25px;
     border-radius: 25px;
     color: #FFFEFE;
 }
@@ -115,21 +115,38 @@ a:active {
 .button-two:focus {
     text-transform: uppercase;
     background-color: #FFFEFE;
-    padding: 12px;
+    padding: 10px 25px;
     border-radius: 25px;
     color: #F14848;
 }
 
 /*Header*/
 
-header {
+.main-header {
     background-color: White;
     /*position: fixed;*/
     width: 100%;
     display: block;
 }
 
+.main-header > a {
+    padding-right: 530px;
+}
+
+.main-header img {
+    padding-top: 12px;
+    padding-left: 10px;
+}
+
 /*Navigation header*/
+
+.main-menu {
+    display: inline-block;
+}
+
+.main-menu a {
+    padding-right: 20px;
+}
 
 .main-menu li {
     display: inline;
@@ -164,13 +181,13 @@ footer {
 .terms-privacy {
     background-color: #1E2024;
 }
+
 .center,
 .bottom-center {
     width: 90%;
     max-width: 1050px;
     margin: 0 auto;
 }
-
 
 .site-footer a {
     color: gray;
@@ -199,7 +216,6 @@ footer {
 
 /*The method above describes the other way of making the lower footer - all to color white and then target a few and turn grey*/
 
-
 .terms-privacy {
     color: rgb(99, 99, 99);
     background-color: rgb(21, 21, 21);
@@ -214,33 +230,48 @@ footer {
     color: white;
 }
 
-/*Primary Header*/
+/*Primary Headline*/
 
-.primary-header {
+.primary-headline {
     height: 500px;
-    width: 1300px;
+    width: 1320px;
     background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    text-align: center;
-    line-height: 100%;
 }
 
-.primary-header div {
-    padding-top: 125px;
+.primary-headline div {
+    padding-top: 145px;
     color: white;
     font-weight: normal;
+    text-align: center;
+    line-height: 8px;
+}
+
+.primary-headline h2 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+    margin: 0;
 }
 
 /*Why Comgio*/
 
 .why-us {
     text-align: center;
-    margin-bottom: 7rem;
+    margin-bottom: 112px;
+    padding-top: 50px;
 }
 
 .why-us h3 {
     line-height: 0.3rem;
+    margin-bottom: 35px;
+}
+
+.why-us p {
+    font-size: 1.2rem;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 .why-us span {
@@ -253,8 +284,25 @@ footer {
 
 /*Video section*/
 
-.background-video {
+.interactive-list {
     background: rgba(0, 0, 0, 5);
+}
+
+.interactive-list header {
+    color: white;
+    width: 25%;
+    padding-left: 30px;
+}
+
+.interactive-list h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.interactive-list p {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 /*Service boxes section*/
@@ -354,24 +402,23 @@ aside > img:after {
     background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
 }
 
-    /*Removing nav menu under 700px wide*/
+/*Removing nav menu under 700px wide*/
 
-    @media (max-width: 700px) {
+@media (max-width: 700px) {
 
-        .main-menu {
+    .main-menu {
 
-            display: none;
-
-        }
+        display: none;
 
     }
 
+}
 
-    /*Responsive footer*/
+/*Responsive footer*/
 
-    @media(max-width: 990px) {
-        .center {
-            max-width: 660px;
-        }
+@media (max-width: 990px) {
+    .center {
+        max-width: 660px;
     }
+}
 
