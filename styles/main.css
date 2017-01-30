@@ -292,7 +292,6 @@ footer {
     color: white;
     width: 25%;
     padding-left: 30px;
-    display: inline-block;
 }
 
 .interactive-list h3 {
@@ -305,9 +304,6 @@ footer {
     font-size: 1rem;
     font-weight: 300;
 }
-
-.interactive-list ul,
-.interactive-list li {}
 
 /*Service boxes section*/
 
