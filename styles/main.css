@@ -272,16 +272,14 @@ footer {
 /*Primary Headline*/
 
 .primary-headline {
-    height: 80vh;
+    height: 38.8vw;
     background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: center;
+    background-size: contain;
 }
 
 .primary-headline div {
     padding-top: 145px;
-    width: 100vw;
     color: white;
     font-weight: normal;
     text-align: center;
@@ -366,7 +364,7 @@ footer {
     display: inline-block;
     height: 550px;
     background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
-    background-size: 50%, 100vw;
+    background-size: 25vw, 100vw;
     background-repeat: no-repeat, no-repeat;
     background-position: 150px 30px, center center;
     width: 50%;
@@ -382,15 +380,26 @@ footer {
 }
 
 .text-format1 h3,
-.text-format1 h4 {
+.text-format1 h4,
+.text-format2 h3,
+.text-format2 h4 {
     margin: 0;
 }
 
-.services-box-1 .text-format1 h3 {
-    font-size: 3vw;
+.text-format1 h4,
+.text-format2 h4 {
+    font-size: 1.3vw;
+    font-weight: 300;
 }
 
-.text-format1 h4 {
+.text-format1 h3,
+.text-format2 h3 {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.text-format1 h4,
+.text-format2 h4 {
     padding-bottom: 15px;
 }
 
@@ -407,22 +416,9 @@ footer {
 
 .services-box-2 .text-format2 {
     text-align: left;
-    padding-top: 250px;
-    padding-left: 140px;
+    padding-top: 320px;
+    padding-left: 50px;
     line-height: 40px;
-}
-
-.text-format1 h3,
-.text-format2 h3 {
-    font-size: 2.3vw;
-    font-weight: 300;
-}
-
-.text-format1 h4,
-.text-format2 h4 {
-    font-size: 1.3vw;
-    font-weight: 300;
-
 }
 
 .text-format1 span,
