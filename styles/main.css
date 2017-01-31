@@ -272,14 +272,15 @@ footer {
 /*Primary Headline*/
 
 .primary-headline {
-    height: 38.8vw;
+    /*divided the picture original ratio to find out the height to width ratio and then put it in height with vw because theres a ratio between the height and width, they are depended in one another.*/
+    height: 38.322vw;
     background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: contain;
+    padding-top: 10%;
 }
 
 .primary-headline div {
-    padding-top: 10%;
     color: white;
     font-weight: normal;
     text-align: center;
@@ -296,12 +297,12 @@ footer {
 
 .why-us {
     text-align: center;
-    padding-bottom: 112px;
-    padding-top: 110px;
+    padding-bottom: 10%;
+    padding-top: 10%;
 }
 
 .why-us h3 {
-    line-height: 0.3rem;
+    line-height: 4.8px;
     margin-bottom: 35px;
 }
 
