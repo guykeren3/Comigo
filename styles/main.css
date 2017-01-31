@@ -28,17 +28,17 @@ body {
 }
 
 h1 {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 4rem;
     font-weight: normal;
 }
 
 h3 {
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
 }
