@@ -1,5 +1,23 @@
-* {
-    border: 2px solid black;
+/*Focused Reset*/
+
+main, header, footer, figcaption, section, div, ul, li, h2, h3, p, a {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+}
+
+/*Box sizing*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 /*Font strategy*/
@@ -10,17 +28,17 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: normal;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: normal;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -96,16 +114,20 @@ a:active {
 
 /*Buttons*/
 
+/*LINE HEIGHT SCREWS THE BUTTONS SO SET 0*/
+
 .button-one:link,
 .button-one:visited,
 .button-one:hover,
 .button-one:active,
 .button-one:focus {
     text-transform: uppercase;
+    display: inline-block;
     background-color: #F14848;
-    padding: 10px 25px;
+    padding: 20px 25px;
     border-radius: 25px;
     color: #FFFEFE;
+    line-height: 0;
 }
 
 .button-two:link,
@@ -114,10 +136,12 @@ a:active {
 .button-two:active,
 .button-two:focus {
     text-transform: uppercase;
+    display: inline-block;
     background-color: #FFFEFE;
-    padding: 10px 25px;
+    padding: 20px 25px;
     border-radius: 25px;
     color: #F14848;
+    line-height: 0;
 }
 
 /*Header*/
@@ -125,31 +149,46 @@ a:active {
 .main-header {
     background-color: White;
     /*position: fixed;*/
-    width: 100%;
-    display: block;
+    height: 66px;
 }
 
-.main-header > a {
-    padding-right: 530px;
+.logo {
+    display: inline-block;
+    line-height: 66px;
+    padding-left: 25px;
 }
 
 .main-header img {
-    padding-top: 12px;
-    padding-left: 10px;
+    vertical-align: middle;
 }
 
 /*Navigation header*/
 
 .main-menu {
     display: inline-block;
+    margin-right: 15px;
+    float: right;
+
+}
+
+.main-menu ul {
+    margin: 0;
+}
+
+.main-menu > ul li:first-child a {
+    color: #F14848;
+    font-weight: 700;
 }
 
 .main-menu a {
-    padding-right: 20px;
+    padding: 0 10px;
+    /*margin-right: 20px;*/
+    line-height: 66px;
+    display: inline-block;
 }
 
 .main-menu li {
-    display: inline;
+    display: inline-block;
 }
 
 .main-menu li > ul {
@@ -233,16 +272,16 @@ footer {
 /*Primary Headline*/
 
 .primary-headline {
-    height: 500px;
-    width: 1320px;
+    height: 80vh;
     background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
     background-position: center;
 }
 
 .primary-headline div {
     padding-top: 145px;
+    width: 100vw;
     color: white;
     font-weight: normal;
     text-align: center;
@@ -259,8 +298,8 @@ footer {
 
 .why-us {
     text-align: center;
-    margin-bottom: 112px;
-    padding-top: 50px;
+    padding-bottom: 112px;
+    padding-top: 110px;
 }
 
 .why-us h3 {
@@ -270,16 +309,13 @@ footer {
 
 .why-us p {
     font-size: 1.2rem;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    font-weight: 100;
+    padding-top: 0;
+    padding-bottom: 25px;
 }
 
 .why-us span {
     display: block;
-}
-
-.why-us a {
-
 }
 
 /*Video section*/
@@ -292,10 +328,12 @@ footer {
     color: white;
     width: 10%;
     padding-left: 50px;
+    padding-right: 400px;
+    display: inline-block;
 }
 
 .interactive-list header span {
-   display: block;
+    display: block;
 }
 
 .interactive-list h3 {
@@ -309,34 +347,87 @@ footer {
     font-weight: 300;
 }
 
+.interactive-list ul {
+    display: inline-block;
+    width: 350px;
+}
+
+.interactive-list ul a {
+    display: block;
+}
+
 /*Service boxes section*/
 
 .service-box {
     display: block;
-    height: 100%;
-    width: 100%;
 }
 
 .services-box-1 {
     display: inline-block;
-    height: 596.8px;
+    height: 550px;
     background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
-    background-size: 50%, contain;
+    background-size: 50%, 100vw;
     background-repeat: no-repeat, no-repeat;
-    background-position: center center, center center;
-    width: 49%;
-    text-align: center;
+    background-position: 150px 30px, center center;
+    width: 50%;
+    float: left;
+}
+
+.text-format1 {
+    text-align: left;
+    color: white;
+    padding-top: 320px;
+    padding-left: 150px;
+    line-height: 40px;
+}
+
+.text-format1 h3,
+.text-format1 h4 {
+    margin: 0;
+}
+
+.services-box-1 .text-format1 h3 {
+    font-size: 3vw;
+}
+
+.text-format1 h4 {
+    padding-bottom: 15px;
 }
 
 .services-box-2 {
     display: inline-block;
-    height: 596.8px;
+    height: 550px;
     background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
-    background-size: 40%, contain;
+    background-size: 40%, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center center, center center;
-    width: 49%;
-    text-align: center;
+    background-position: 50px 30px, center center;
+    width: 50%;
+    float: left;
+}
+
+.services-box-2 .text-format2 {
+    text-align: left;
+    padding-top: 250px;
+    padding-left: 140px;
+    line-height: 40px;
+}
+
+.text-format1 h3,
+.text-format2 h3 {
+    font-size: 2.3vw;
+    font-weight: 300;
+}
+
+.text-format1 h4,
+.text-format2 h4 {
+    font-size: 1.3vw;
+    font-weight: 300;
+
+}
+
+.text-format1 span,
+.text-format2 span {
+    display: block;
 }
 
 .your-content-comigo {
