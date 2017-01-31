@@ -388,13 +388,13 @@ footer {
 
 .text-format1 h4,
 .text-format2 h4 {
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
 .text-format1 h3,
 .text-format2 h3 {
-    font-size: 3vw;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
