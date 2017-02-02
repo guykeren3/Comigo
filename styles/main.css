@@ -90,28 +90,6 @@ a:active {
     outline: none;
 }
 
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.clear:before,
-.clear:after {
-    content: "";
-    display: table;
-}
-
-.clear:after {
-    clear: both;
-}
-
-.clear {
-    clear: both;
-    *zoom: 1;
-}
-
-/*------------------------*/
-
 /*Buttons*/
 
 /*LINE HEIGHT SCREWS THE BUTTONS SO SET 0*/
@@ -155,6 +133,7 @@ body {
 .main-header {
     background-color: White;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     height: 66px;
@@ -256,37 +235,53 @@ a.selected {
 
 .left-container {
     width: 60%;
-    height: 48vw;
+    height: 41vw;
     float: left;
     background-color: #F9F9F9;
 }
 
 .right-container {
     width: 40%;
-    height: 48vw;
+    height: 41vw;
     float: left;
     background-color: #E8E8E8;
+    background-image: url(/assets/comigo-assets/other/screen_demo.jpg);
+    background-position: 30px 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-container a {
+    display: block;
+    height: 100%;
 }
 
 .first-block-left {
     width: 65%;
-    height: 40%;
+    height: 45%;
     float: left;
 }
 
 .first-block-right {
     width: 35%;
-    height: 40%;
+    height: 45%;
     float: left;
 }
 
 .download-link {
     display: block;
     height: 100%;
-    font-size: 1.6rem;
+    /*width: 90%;*/
+    font-size: 1.4rem;
     font-weight: 400;
-    padding-top: 180px;
-    padding-left: 20px;
+    padding-top: 62%;
+    padding-left: 10%;
+}
+
+.download-link span {
+    display: block;
+    /*width: 90%;*/
+    /*padding-left;*/
 }
 
 .first-block-left h3 {
@@ -302,13 +297,22 @@ a.selected {
     height: 60%;
     float: left;
     background-color: #EFEFEF;
+    padding-top: 4%;
+    padding-left: 2%;
 }
 
 .second-block-right {
     width: 65%;
     height: 60%;
     float: left;
+    background-image: url(/assets/comigo-assets/other/img-event-IBC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #E8E8E8;
+}
+
+.second-block-link-container:hover {
+    color: #352E2F;
 }
 
 .second-block-right h3 {
@@ -330,6 +334,7 @@ a.selected {
     padding-top: 10px;
     padding-left: 30px;
     color: #3D3D3D;
+    line-height: 100%;
 }
 
 .right-container img {
@@ -374,9 +379,10 @@ footer {
 
 .site-footer a {
     color: gray;
+    line-height: 30px;
 }
 
-.bottom-nav a {
+.center a {
     text-transform: uppercase;
 }
 
@@ -384,8 +390,31 @@ footer {
     color: #F14848;
 }
 
-.site-footer .bottom-nav > li > a {
+.site-footer .center .list-container > ul > li > a {
     color: white;
+    line-height: 50px;
+}
+
+.list-container {
+    width: 80%;
+    height: 21vw;
+    display: inline-block;
+}
+.list-container > ul {
+    width: 33%;
+    float: left;
+    padding-top: 4%;
+}
+
+.footer-logo {
+    float: right;
+    padding-top: 8%;
+}
+
+/*subfooter*/
+
+.subfooter {
+    /*float: left;*/
 }
 
 
@@ -574,22 +603,48 @@ footer {
 }
 
 .your-content-comigo {
-    display: inline-block;
+    background-image: url(/assets/comigo-assets/other/screen_whos_on.jpg);
+    background-size: 60% auto;
+    background-position: 115%;
+    background-repeat: no-repeat;
+    height: 705px;
 }
 
-aside > img {
-    width: 600px;
-    height: auto;
-    float: left;
-
+.your-content-comigo .content {
+    width: 30%;
+    padding-left: 100px;
+    padding-top: 80px;
 }
 
-/*clearing float for next element*/
-
-aside > img:before,
-aside > img:after {
-    clear: both;
+.your-content-comigo .content h3 {
+    font-size: 3.5rem;
+    line-height: 60px;
 }
+
+.your-content-comigo .content p {
+    font-size: 1.1rem;
+    color: #818181;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+/*.your-content-comigo {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*aside > img {*/
+    /*width: 600px;*/
+    /*height: auto;*/
+    /*float: left;*/
+/*}*/
+
+/*!*clearing float for next element*!*/
+
+/*aside > img:before,*/
+/*aside > img:after {*/
+    /*clear: both;*/
+/*}*/
 
 /*blog backgrounds*/
 
@@ -622,9 +677,16 @@ aside > img:after {
     background-color: #F14848
 }
 
+.blog {
+    height: 35vw;
+}
+
+.blog-pic {
+    height: 100%;
+}
 .blog li {
-    width: 16.6%;
-    height: 480px;
+    width: 16.666666%;
+    height: 100%;
     float: left;
     position: relative;
 }
@@ -706,3 +768,32 @@ aside > img:after {
     }
 }
 
+
+
+/*Helpers*/
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*------------------------*/
