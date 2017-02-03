@@ -496,14 +496,17 @@ footer {
 
 .interactive-list {
     background: rgba(0, 0, 0, 5);
+    height: 41vw;
 }
 
 .interactive-list header {
     color: white;
-    width: 20%;
-    padding-left: 50px;
-    padding-right: 400px;
+    width: 30%;
+    padding-left: 8%;
+    padding-top: 4%;
+    /*padding-right: 400px;*/
     display: inline-block;
+    float: left;
 }
 
 .interactive-list header span {
@@ -511,23 +514,59 @@ footer {
 }
 
 .interactive-list h3 {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 100%;
 }
 
 .interactive-list p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
+    padding-top: 10%;
+    width: 80%;
+}
+
+.interactive-list h4 {
+    line-height: 15px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
 }
 
 .interactive-list ul {
     display: inline-block;
     width: 350px;
+    padding-left: 7%;
+    padding-top: 2%;
+    /*outline: 1px solid red;*/
+    float: left;
 }
 
 .interactive-list ul a {
     display: block;
+}
+
+.interactive-list > ul {
+    position: relative;
+}
+
+.interactive-list li > ul {
+    display: none;
+}
+
+.interactive-list li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    color: #C1C1C1;
+    width: 85vh;
+    /*outline: 1px solid red;*/
+}
+
+.interactive-list figcaption {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 /*Service boxes section*/
