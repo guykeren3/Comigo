@@ -128,6 +128,7 @@ body {
   left: 0;
   height: 66px;
   width: 100%;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .5);
 }
 
 .logo {
@@ -457,9 +458,9 @@ span.subfooter-floater-left {
   width: 80%;
 }
 
-.interactive-list h4 {
+section.interactive-list h4 {
   line-height: 15px;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 
@@ -548,7 +549,7 @@ span.subfooter-floater-left {
 .interactive-list .customize img {
   display: block;
   padding-top: 10%;
-  margin-left: 2%;
+  margin-left: 0;
   transform: scale(1.2);
 }
 
@@ -706,17 +707,17 @@ span.subfooter-floater-left {
   text-align: center;
 }
 
-.blog-pic li:not(.our-blog):hover span {
-  top: -50%;
-  right: 0;
-}
+/*.blog-pic li:not(.our-blog):hover span {*/
+  /*top: -50%;*/
+  /*right: 0;*/
+/*}*/
 
-/*The selector below refers to what we learned blog and quality read more spans, lines them up in the same row as the others overflowen spans*/
+/*!*The selector below refers to what we learned blog and quality read more spans, lines them up in the same row as the others overflowen spans*!*/
 
-.blog-pic li:nth-child(3n+3):hover span {
-  top: -120%;
-  right: 0;
-}
+/*.blog-pic li:nth-child(3n+3):hover span {*/
+  /*top: -120%;*/
+  /*right: 0;*/
+/*}*/
 
 .blog {
   height: 35vw;
@@ -762,6 +763,19 @@ span.subfooter-floater-left {
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: .6s;
+  transition-delay: .2s;
+}
+
+/*moving the div on hover*/
+
+.blog-pic li:hover div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-100px);
 }
 
 .our-blog div {
@@ -883,10 +897,12 @@ span.subfooter-floater-left {
 
   @keyframes slide {
     0% {
+      opacity: 0;
       top: 70%;
       left: 0;
     }
     100% {
+      opacity: 100%;
       top: 100%;
       left: 0;
     }
