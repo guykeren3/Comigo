@@ -224,10 +224,7 @@ body {
   width: 65%;
   height: 60%;
   float: left;
-  background-image: url(/assets/comigo-assets/other/img-event-IBC.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #E8E8E8;
+  background: #E8E8E8 url(/assets/comigo-assets/other/img-event-IBC.jpg) no-repeat center;
   transition-property: transform;
   transition-duration: .3s
 }
