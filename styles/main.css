@@ -916,7 +916,7 @@ section.interactive-list h4 {
       left: 0;
     }
     100% {
-      opacity: 100%;
+      opacity: 100;
       top: 100%;
       left: 0;
     }
@@ -1531,6 +1531,4 @@ section.interactive-list h4 {
 
 .interactive-list h4 {
   font-size: 1rem;
-}
-
 }
