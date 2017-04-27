@@ -255,7 +255,7 @@ body {
   width: 65%;
   height: 60%;
   float: left;
-  background: #E8E8E8 url(/assets/comigo-assets/other/img-event-IBC.jpg) no-repeat center;
+  background: #E8E8E8 url(../assets/comigo-assets/other/img-event-IBC.jpg) no-repeat center;
   transition-property: transform;
   transition-duration: .3s
 }
@@ -1451,7 +1451,7 @@ section.interactive-list h4 {
     width: 65%;
     height: 60%;
     float: none;
-    background-image: url(assets/comigo-assets/other/img-event-IBC.jpg);
+    background-image: url(../assets/comigo-assets/other/img-event-IBC.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #E8E8E8;
