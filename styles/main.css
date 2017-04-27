@@ -578,7 +578,7 @@ section.interactive-list h4 {
   display: block;
   padding-top: 10%;
   margin-left: 0;
-  transform: scale(1);
+  transform: scale(0.7);
 }
 
 /*Service boxes section*/
