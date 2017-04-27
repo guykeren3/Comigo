@@ -549,7 +549,7 @@ section.interactive-list h4 {
 .interactive-list .interactive-list-item-soccer-player img {
   display: block;
   height: 100%;
-  width: 100%;
+  width: 90%;
   margin-left: 25%;
   margin-right: 25%;
   transform: scale(.9);
