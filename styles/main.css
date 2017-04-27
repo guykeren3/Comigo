@@ -1,4 +1,4 @@
-/*Focused Reset*/
+/* specific Reset*/
 
 main, header, footer, figcaption, section, div, ul, li, h2, h3, p, a {
   padding: 0;
@@ -137,19 +137,19 @@ body {
   padding-left: 25px;
 }
 
-.main-header img {
+.site-logo {
   vertical-align: middle;
 }
 
 /*Learn more and Schedule a demo*/
-.left-container {
+.learn-more-links-left-container {
   width: 60%;
   height: 41vw;
   float: left;
   background-color: #F9F9F9;
 }
 
-.right-container {
+.learn-more-links-right-container {
   width: 40%;
   height: 41vw;
   float: left;
@@ -163,14 +163,14 @@ body {
   transition-duration: .3s
 }
 
-.right-container:hover {
+.learn-more-links-right-container:hover {
   transform: scale(1.03);
   box-shadow: -5px 10px 25px 0 rgba(0, 0, 0, .4);
   position: relative;
   z-index: 10;
 }
 
-.right-container a {
+.learn-more-links-right-container a {
   display: block;
   height: 100%;
 }
@@ -211,7 +211,7 @@ body {
   line-height: 4rem;
 }
 
-.second-block-left {
+.social-links-wrapper {
   width: 35%;
   height: 60%;
   float: left;
@@ -220,7 +220,38 @@ body {
   padding-left: 2%;
 }
 
-.second-block-right {
+.social-links-wrapper a {
+  display: inline-block;
+  padding: 10px;
+}
+
+/*social links fonts*/
+
+.icon-facebook2:before {
+  content: "\ea91";
+  color: #4F68A1;
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+  color: #1DA1F2;
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+  color: #2892BA;
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
+  color: #E62117;
+}
+
+.social-links-adjustment {
+  font-size: 100px;
+}
+
+.schedule-meeting-wrapper {
   width: 65%;
   height: 60%;
   float: left;
@@ -229,25 +260,25 @@ body {
   transition-duration: .3s
 }
 
-.second-block-right:hover {
+.schedule-meeting-wrapper:hover {
   transform: scale(1.03);
   color: black;
 }
 
-.second-block-right h3 {
+.schedule-meeting-wrapper h3 {
   font-size: 1.5rem;
   width: 55%;
   padding-top: 20px;
   padding-left: 20px;
 }
 
-.second-block-right img {
+.schedule-meeting-wrapper img {
   display: block;
   margin: auto;
   width: 60%;
 }
 
-.right-container h3 {
+.learn-more-links-right-container h3 {
   font-size: 4rem;
   width: 70%;
   padding-top: 10px;
@@ -256,7 +287,7 @@ body {
   line-height: 100%;
 }
 
-.right-container img {
+.learn-more-links-right-container img {
   padding-left: 30px;
   width: 99%;
   height: 70%;
@@ -399,26 +430,26 @@ span.subfooter-floater-left {
 }
 
 /*Why Comgio*/
-.why-us {
+.why-us-section {
   text-align: center;
   padding-bottom: 10%;
   padding-top: 10%;
   position: relative;
 }
 
-.why-us h3 {
+.why-us-section h3 {
   line-height: 4.8px;
   margin-bottom: 35px;
 }
 
-.why-us p {
+.why-us-section p {
   font-size: 1.2rem;
   font-weight: 100;
   padding-top: 0;
   padding-bottom: 25px;
 }
 
-.why-us span {
+.why-us-section span {
   display: block;
 }
 
@@ -508,14 +539,14 @@ section.interactive-list h4 {
   /*margin-right: 10%;*/
 }
 
-.soccer-player figcaption,
-.participation figcaption,
-.soldiers figcaption,
-.advertising figcaption {
+.interactive-list-item-soccer-player figcaption,
+.interactive-list-item-participation figcaption,
+.interactive-list-item-soldiers figcaption,
+.interactive-list-item-advertising figcaption {
   width: 140%;
 }
 
-.interactive-list .soccer-player img {
+.interactive-list .interactive-list-item-soccer-player img {
   display: block;
   height: 90%;
   width: 90%;
@@ -523,7 +554,7 @@ section.interactive-list h4 {
   margin-right: 10%;
 }
 
-.interactive-list .soccer-player video {
+.interactive-list .interactive-list-item-soccer-player video {
   display: block;
   height: 1280px;
   width: 1280px; /* effects both the location of the image and the size if decreased */
@@ -537,7 +568,7 @@ section.interactive-list h4 {
   /*z-index: -10;*/
 }
 
-.interactive-list .soldiers img {
+.interactive-list .interactive-list-item-soldiers img {
   display: block;
   width: 100%;
   height: 100%;
@@ -547,7 +578,7 @@ section.interactive-list h4 {
   /*outline: 1px solid red;*/
 }
 
-.interactive-list .robots img {
+.interactive-list .interactive-list-item-robots img {
   display: block;
   width: 80%;
   height: 80%;
@@ -557,7 +588,7 @@ section.interactive-list h4 {
   /*outline: 1px solid red;*/
 }
 
-.interactive-list .customize img {
+.interactive-list .interactive-list-item-customize img {
   display: block;
   padding-top: 10%;
   margin-left: 0;
@@ -565,12 +596,12 @@ section.interactive-list h4 {
 }
 
 /*Service boxes section*/
-.service-box {
+.service-boxes {
   display: block;
   /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONEO NEXT TO EACHOTHER*/
 }
 
-.services-box-1 {
+.service-box-tv {
   display: inline-block;
   height: 550px;
   background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
@@ -581,7 +612,7 @@ section.interactive-list h4 {
   float: left;
 }
 
-.text-format1 {
+.service-box-tv-text-wrapper {
   text-align: left;
   color: white;
   padding-top: 320px;
@@ -589,31 +620,31 @@ section.interactive-list h4 {
   line-height: 40px;
 }
 
-.text-format1 h3,
-.text-format1 h4,
-.text-format2 h3,
-.text-format2 h4 {
+.service-box-tv-text-wrapper h3,
+.service-box-tv-text-wrapper h4,
+.service-box-android-text-wrapper h3,
+.service-box-android-text-wrapper h4 {
   margin: 0;
 }
 
-.text-format1 h4,
-.text-format2 h4 {
+.service-box-tv-text-wrapper h4,
+.service-box-android-text-wrapper h4 {
   font-size: 1.3rem;
   font-weight: 300;
 }
 
-.text-format1 h3,
-.text-format2 h3 {
+.service-box-tv-text-wrapper h3,
+.service-box-android-text-wrapper h3 {
   font-size: 2.5rem;
   font-weight: 300;
 }
 
-.text-format1 h4,
-.text-format2 h4 {
+.service-box-tv-text-wrapper h4,
+.service-box-android-text-wrapper h4 {
   padding-bottom: 15px;
 }
 
-.services-box-2 {
+.service-box-android {
   display: inline-block;
   height: 550px;
   background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
@@ -624,16 +655,15 @@ section.interactive-list h4 {
   float: left;
 }
 
-/*.services-box-2 */
-.text-format2 {
+.service-box-android-text-wrapper {
   text-align: left;
   padding-top: 320px;
   padding-left: 50px;
   line-height: 40px;
 }
 
-.text-format1 span,
-.text-format2 span {
+.service-box-tv-text-wrapper span,
+.service-box-android-text-wrapper span {
   display: block;
 }
 
@@ -645,18 +675,18 @@ section.interactive-list h4 {
   height: 705px;
 }
 
-.your-content-comigo .content {
+.your-content-comigo .content-wrapper {
   width: 30%;
   padding-left: 100px;
   padding-top: 80px;
 }
 
-.your-content-comigo .content h3 {
+.your-content-comigo .content-wrapper h3 {
   font-size: 3.5rem;
   line-height: 60px;
 }
 
-.your-content-comigo .content p {
+.your-content-comigo .content-wrapper p {
   font-size: 1.1rem;
   color: #818181;
   width: 80%;
@@ -665,20 +695,6 @@ section.interactive-list h4 {
 
 }
 
-/*.your-content-comigo {*/
-/*display: inline-block;*/
-/*}*/
-/*aside > img {*/
-/*width: 600px;*/
-/*height: auto;*/
-/*float: left;*/
-/*}*/
-/*!*clearing float for next element*!*/
-/*aside > img:before,*/
-/*aside > img:after {*/
-/*clear: both;*/
-/*}*/
-/*blog backgrounds*/
 .blog {
   clear: both;
 }
@@ -719,15 +735,15 @@ section.interactive-list h4 {
 }
 
 /*.blog-pic li:not(.our-blog):hover span {*/
-  /*top: -50%;*/
-  /*right: 0;*/
+/*top: -50%;*/
+/*right: 0;*/
 /*}*/
 
 /*!*The selector below refers to what we learned blog and quality read more spans, lines them up in the same row as the others overflowen spans*!*/
 
 /*.blog-pic li:nth-child(3n+3):hover span {*/
-  /*top: -120%;*/
-  /*right: 0;*/
+/*top: -120%;*/
+/*right: 0;*/
 /*}*/
 
 .blog {
@@ -874,7 +890,7 @@ section.interactive-list h4 {
     margin: 0;
   }
 
-  .main-menu a.selected {
+  .main-menu a.selected-nav-menu {
     color: #F14848;
     font-weight: 700;
   }
@@ -932,7 +948,7 @@ section.interactive-list h4 {
     float: left;
   }
 
-  .main-menu .hide-caps > li > ul {
+  .main-menu .nav-menu-second-row > li > ul {
     top: 100%;
     left: 0;
   }
@@ -943,7 +959,7 @@ section.interactive-list h4 {
     transition: background-color 0.4s;
   }
 
-  .hide-caps > li > ul > li {
+  .nav-menu-second-row > li > ul > li {
     width: 50%;
     float: left;
   }
@@ -1041,7 +1057,7 @@ section.interactive-list h4 {
     color: inherit;
   }
 
-  nav .selected {
+  nav .selected-nav-menu {
     color: #F14848;
     font-weight: 700;
   }
@@ -1203,14 +1219,14 @@ section.interactive-list h4 {
     /*margin-right: 10%;*/
   }
 
-  .soccer-player figcaption,
-  .participation figcaption,
-  .soldiers figcaption,
-  .advertising figcaption {
+  .interactive-list-item-soccer-player figcaption,
+  .interactive-list-item-participation figcaption,
+  .interactive-list-item-soldiers figcaption,
+  .interactive-list-item-advertising figcaption {
     /*width: 200%;*/
   }
 
-  .interactive-list .soccer-player img {
+  .interactive-list .interactive-list-item-soccer-player img {
     display: block;
     height: 90%;
     width: 70%; /* effects both the location of the image and the size if decreased */
@@ -1220,8 +1236,7 @@ section.interactive-list h4 {
     transform: scale(1);
   }
 
-
-  .interactive-list .participation img {
+  .interactive-list .interactive-list-item-participation img {
     display: block;
     height: 90%;
     width: 90%;
@@ -1231,7 +1246,7 @@ section.interactive-list h4 {
     transform: scale(1.5);
   }
 
-  .interactive-list .soldiers img {
+  .interactive-list .interactive-list-item-soldiers img {
     display: block;
     width: 100%;
     height: 100%;
@@ -1241,7 +1256,7 @@ section.interactive-list h4 {
     /*outline: 1px solid red;*/
   }
 
-  .interactive-list .robots img {
+  .interactive-list .interactive-list-item-robots img {
     display: block;
     width: 80%;
     height: 80%;
@@ -1251,14 +1266,14 @@ section.interactive-list h4 {
     /*outline: 1px solid red;*/
   }
 
-  .interactive-list .advertising img {
+  .interactive-list .interactive-list-item-advertising img {
     display: block;
     padding-top: 0;
     margin-left: 2%;
     transform: scale(.8);
   }
 
-  .interactive-list .customize img {
+  .interactive-list .interactive-list-item-customize img {
     display: block;
     padding-top: 0;
     margin-left: 10%;
@@ -1266,12 +1281,12 @@ section.interactive-list h4 {
   }
 
   /*Service boxes section query*/
-  .service-box {
+  .service-boxes {
     display: block;
     /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONEO NEXT TO EACHOTHER*/
   }
 
-  .services-box-1 {
+  .service-box-tv {
     display: block;
     height: 550px;
     background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
@@ -1282,7 +1297,7 @@ section.interactive-list h4 {
     float: none;
   }
 
-  .text-format1 {
+  .service-box-tv-text-wrapper {
     text-align: center;
     color: white;
     padding-top: 340px;
@@ -1291,7 +1306,7 @@ section.interactive-list h4 {
     line-height: 40px;
   }
 
-  .services-box-2 {
+  .service-box-android {
     display: block;
     height: 550px;
     background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
@@ -1303,15 +1318,15 @@ section.interactive-list h4 {
   }
 
   /*.services-box-2 */
-  .text-format2 {
+  .service-box-android-text-wrapper {
     text-align: center;
     padding-top: 340px;
     padding-left: 0px;
     line-height: 40px;
   }
 
-  .text-format1 span,
-  .text-format2 span {
+  .service-box-tv-text-wrapper span,
+  .service-box-android-text-wrapper span {
     display: block;
   }
 
@@ -1323,19 +1338,19 @@ section.interactive-list h4 {
     height: 705px;
   }
 
-  .your-content-comigo .content {
+  .your-content-comigo .content-wrapper {
     width: 100%;
     text-align: center;
     padding-left: 0;
     padding-top: 440px;
   }
 
-  .your-content-comigo .content h3 {
+  .your-content-comigo .content-wrapper h3 {
     font-size: 3.5rem;
     line-height: 60px;
   }
 
-  .your-content-comigo .content p {
+  .your-content-comigo .content-wrapper p {
     font-size: 1.1rem;
     color: #818181;
     width: 100%;
@@ -1348,7 +1363,7 @@ section.interactive-list h4 {
     position: relative;
   }
 
-  .left-container {
+  .learn-more-links-left-container {
     width: 100%;
     height: 100vw;
     margin-bottom: 1000px;
@@ -1356,7 +1371,7 @@ section.interactive-list h4 {
     background-color: #F9F9F9;
   }
 
-  .right-container {
+  .learn-more-links-right-container {
     width: 100%;
     height: 100vw;
     float: none;
@@ -1373,14 +1388,14 @@ section.interactive-list h4 {
     transition-duration: .3s
   }
 
-  .right-container:hover {
+  .learn-more-links-right-container:hover {
     transform: scale(1.03);
     box-shadow: -5px 10px 25px 0 rgba(0, 0, 0, .4);
     position: absolute;
     z-index: 10;
   }
 
-  .right-container a {
+  .learn-more-links-right-container a {
     display: block;
     height: 100%;
   }
@@ -1423,7 +1438,7 @@ section.interactive-list h4 {
     line-height: 4rem;
   }
 
-  .second-block-left {
+  .social-links-wrapper {
     width: 100%;
     height: 60%;
     float: none;
@@ -1432,11 +1447,11 @@ section.interactive-list h4 {
     padding-left: 2%;
   }
 
-  .second-block-right {
+  .schedule-meeting-wrapper {
     width: 65%;
     height: 60%;
     float: none;
-    background-image: url(/assets/comigo-assets/other/img-event-IBC.jpg);
+    background-image: url(../assets/comigo-assets/other/img-event-IBC.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #E8E8E8;
@@ -1444,25 +1459,25 @@ section.interactive-list h4 {
     transition-duration: .3s
   }
 
-  .second-block-right:hover {
+  .schedule-meeting-wrapper:hover {
     transform: scale(1.03);
     color: black;
   }
 
-  .second-block-right h3 {
+  .schedule-meeting-wrapper h3 {
     font-size: 1.5rem;
     width: 55%;
     padding-top: 20px;
     padding-left: 20px;
   }
 
-  .second-block-right img {
+  .schedule-meeting-wrapper img {
     display: block;
     margin: auto;
     width: 60%;
   }
 
-  .right-container h3 {
+  .learn-more-links-right-container h3 {
     font-size: 4rem;
     width: 70%;
     padding-top: 10px;
@@ -1471,7 +1486,7 @@ section.interactive-list h4 {
     line-height: 100%;
   }
 
-  .right-container img {
+  .learn-more-links-right-container img {
     padding-left: 30px;
     width: 99%;
     height: 70%;

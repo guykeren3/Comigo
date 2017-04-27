@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 <header class="main-header clearfix">
 
   <a href="index.html" class="logo">
-    <img src="assets/comigo-assets/logo/comigo-logo-black.png" height="26" width="140" alt="comigo-logo">
+    <img src="assets/comigo-assets/logo/comigo-logo-black.png" height="26" width="140" alt="comigo-logo" class="site-logo">
   </a>
 
   <input type="checkbox" id="menu-check">
@@ -23,11 +24,11 @@
 
   <nav class="main-menu">
     <ul class="clearfix">
-      <li><a href="index.html" class="selected">Home</a></li>
+      <li><a href="index.html" class="selected-nav-menu">Home</a></li>
       <li>
         <a href="#"> Our Solutions </a>
 
-        <ul class="hide-caps">
+        <ul class="nav-menu-second-row">
           <li>
             <a href="#"> <span>ei cloud</span></a>
             <ul>
@@ -56,7 +57,7 @@
       </li>
       <li>
         <a href="#">Industry Insights </a>
-        <ul class="hide caps">
+        <ul class="nav-menu-second-row">
           <li><a href="#"><span>media room</span></a></li>
           <li><a href="#"><span>blog</span></a></li>
           <li><a href="#"><span>industry events</span></a></li>
@@ -70,8 +71,6 @@
 
 <main>
 
-  <!--Will add background picture later-->
-
   <section class="primary-headline">
     <div>
       <h1>Comigo OTT/STB solutions - redefine TV experience</h1>
@@ -81,7 +80,7 @@
   </section>
 
 
-  <section class="why-us">
+  <section class="why-us-section">
 
     <h3>why comigo?</h3>
     <p> Comigo redefines the TV experience, <span>infusing it with the full power of the internet.</span></p>
@@ -101,20 +100,12 @@
 
         <a href="#pedia"><h4>pedia</h4></a>
         <ul>
-          <li id="pedia" class="soccer-player">
+          <li id="pedia" class="interactive-list-item-soccer-player">
 
             <figure>
 
               <figcaption>Drive stickiness by enriching content with contextual data from external
                 sources
-
-                <div class="fullscreen-bg">
-                <video loop muted autoplay poster="/assets/comigo-assets/videos/video-soccer-750x422.jpg"
-                class="fullscreen-bg__video">
-                <source src="/assets/comigo-assets/videos/video-soccer_2.mp4" type="video/mp4">
-                </video>
-                </div>
-
               </figcaption>
               <img src="assets/comigo-assets/services/pedia.png" height="469" width="344" alt="pedia"
               >
@@ -125,7 +116,7 @@
       </li>
       <li><a href="#participation"><h4>participation</h4></a>
         <ul>
-          <li id="participation" class="participation">
+          <li id="participation" class="interactive-list-item-participation">
 
             <figure>
 
@@ -142,7 +133,7 @@
       </li>
       <li><a href="#discovery"><h4>discovery</h4></a>
         <ul>
-          <li id="discovery" class="soldiers">
+          <li id="discovery" class="interactive-list-item-soldiers">
 
             <figure>
 
@@ -150,7 +141,7 @@
                 recommendations
               </figcaption>
 
-              <img src="assets/comigo-assets/services/discovery.png" alt="discovery" class="soldiers">
+              <img src="assets/comigo-assets/services/discovery.png" alt="discovery" class="interactive-list-item-soldiers">
 
             </figure>
 
@@ -159,7 +150,7 @@
       </li>
       <li><a href="#commerce"><h4>commerce</h4></a>
         <ul>
-          <li id="commerce" class="robots">
+          <li id="commerce" class="interactive-list-item-robots">
 
             <figure>
 
@@ -177,7 +168,7 @@
       </li>
       <li><a href="#advertising"><h4>advertising</h4></a>
         <ul>
-          <li id="advertising" class="advertising">
+          <li id="advertising" class="interactive-list-item-advertising">
 
             <figure>
 
@@ -193,7 +184,7 @@
       <li>
         <a href="#customize"><h4>customize</h4></a>
         <ul>
-          <li id="customize" class="customize">
+          <li id="customize" class="interactive-list-item-customize">
 
             <figure>
 
@@ -213,12 +204,12 @@
   </section>
 
 
-  <section class="service-box clearfix">
+  <section class="service-boxes clearfix">
 
     <!--OTT TV-->
 
-    <div class="services-box-1">
-      <div class="text-format1">
+    <div class="service-box-tv">
+      <div class="service-box-tv-text-wrapper">
         <h3>enhance any <span>tv service</span></h3>
         <h4>Comigo Experience intelligence (EI)</h4>
         <a href="#" class="secondary-btn">enhance your ott tv</a>
@@ -226,8 +217,8 @@
     </div>
 
     <!--ANDROID-->
-    <div class="services-box-2">
-      <div class="text-format2">
+    <div class="service-box-android">
+      <div class="service-box-android-text-wrapper">
         <h3>deploy best in class tv <span>service</span></h3>
         <h4>Comigo's Android-based STB (HW&MW)</h4>
         <a href="#" class="primary-btn"> deploy on android </a>
@@ -238,7 +229,8 @@
 
 
   <section class="your-content-comigo clearfix">
-    <div class="content">
+
+    <div class="content-wrapper">
       <h3>your content, comigo's unique experience</h3>
       <p>Intelligence-based contextual WatchApp&trade; Applications</p>
       <a href="#" class="primary-btn">learn more</a>
@@ -250,7 +242,7 @@
   <section class="learn-more-links clearfix">
 
     <!--Learn more with download square-->
-    <div class="left-container">
+    <div class="learn-more-links-left-container">
       <div class="learn-more-headline">
         <h3>learn more about comigo</h3>
       </div>
@@ -259,28 +251,25 @@
            class="download-link"> Download our brochure <span>to learn more</span> </a>
       </div>
       <!--Social networks links-->
-      <div class="second-block-left">
-        <a href="https://www.facebook.com/Comigo-278941765529151">
-          <img src="assets/images/facebook.png" height="120" width="120" alt="Facebook">
+      <div class="social-links-wrapper">
+
+        <a href="https://www.facebook.com/Comigo-278941765529151" class="icon-facebook2 social-links-adjustment">
         </a>
 
-        <a href="https://twitter.com/Comigo_Ltd">
-          <img src="assets/images/twitter.jpg" height="122" width="122" alt="Twitter">
+        <a href="https://twitter.com/Comigo_Ltd" class="icon-twitter social-links-adjustment">
         </a>
 
-        <a href="https://www.linkedin.com/company/2523681">
-          <img src="assets/images/linkedin.png" height="123" width="123" alt="Linkedin">
+        <a href="https://www.linkedin.com/company/2523681" class="icon-linkedin social-links-adjustment">
         </a>
 
-        <a href="https://www.youtube.com/user/ComigoLtd">
-          <img src="assets/images/youtube.png" height="120" width="120" alt="Youtube">
+        <a href="https://www.youtube.com/user/ComigoLtd" class="icon-youtube social-links-adjustment">
         </a>
       </div>
 
 
       <!--Schedule a meeting square-->
-      <a href="#" class="second-block-link-container">
-        <div class="second-block-right">
+      <a href="#">
+        <div class="schedule-meeting-wrapper">
           <h3> schedule a meeting at IBC 2016</h3>
         </div>
       </a>
@@ -288,9 +277,9 @@
 
     <!--Schedule a demo square-->
 
-    <div class="right-container">
+    <div class="learn-more-links-right-container">
       <a href="#">
-        <h3> SCHEDULE A DEMO</h3>
+        <h3>SCHEDULE A DEMO</h3>
       </a>
     </div>
   </section>
