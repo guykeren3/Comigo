@@ -578,18 +578,13 @@ section.interactive-list h4 {
   display: block;
   padding-top: 10%;
   margin-left: 0;
-  transform: scale(1);
-}
-
-.interactive-list .interactive-list-item-customize figcaption {
-  padding-left: 100px;
-  width: 200px;
+  transform: scale(1.2);
 }
 
 /*Service boxes section*/
 .service-boxes {
   display: block;
-  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONE NEXT TO EACH OTHER*/
+  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONE NEXT TO EACHOTHER*/
 }
 
 .service-box-tv {
