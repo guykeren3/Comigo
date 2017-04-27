@@ -582,8 +582,8 @@ section.interactive-list h4 {
 }
 
 .interactive-list li.interactive-list-item-customize figcaption {
-  padding-right: 80px;
   width: 110%;
+  padding-left: 25px;
 }
 
 /*Service boxes section*/
