@@ -552,7 +552,7 @@ section.interactive-list h4 {
   width: 100%;
   margin-left: 25%;
   margin-right: 10%;
-  transform: scale(1.5);
+  transform: scale(1);
 }
 
 .interactive-list .interactive-list-item-soldiers img {
