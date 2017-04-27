@@ -578,12 +578,12 @@ section.interactive-list h4 {
   display: block;
   padding-top: 10%;
   margin-left: 0;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .interactive-list li.interactive-list-item-customize figcaption {
   padding-left: 100px;
-  width: 117%;
+  width: 150%;
 }
 
 /*Service boxes section*/
