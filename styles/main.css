@@ -554,20 +554,6 @@ section.interactive-list h4 {
   margin-right: 10%;
 }
 
-.interactive-list .interactive-list-item-soccer-player video {
-  display: block;
-  height: 1280px;
-  width: 1280px; /* effects both the location of the image and the size if decreased */
-  margin-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  transform: scale(1);
-  position: absolute;
-  top: -500px;
-  right: 0;
-  /*z-index: -10;*/
-}
-
 .interactive-list .interactive-list-item-soldiers img {
   display: block;
   width: 100%;
@@ -592,13 +578,13 @@ section.interactive-list h4 {
   display: block;
   padding-top: 10%;
   margin-left: 0;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 /*Service boxes section*/
 .service-boxes {
   display: block;
-  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONEO NEXT TO EACHOTHER*/
+  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONE NEXT TO EACH OTHER*/
 }
 
 .service-box-tv {
