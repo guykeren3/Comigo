@@ -583,7 +583,7 @@ section.interactive-list h4 {
 
 .interactive-list li.interactive-list-item-customize figcaption {
   padding-left: 100px;
-  width: 50px;
+  width: 117%;
 }
 
 /*Service boxes section*/
@@ -1268,11 +1268,7 @@ section.interactive-list h4 {
     display: block;
     padding-top: 0;
     margin-left: 10%;
-    transform: scale(.5);
-  }
-
-  .interactive-list .interactive-list-item-customize img {
-    width: 150%;
+    transform: scale(.8);
   }
 
   /*Service boxes section query*/
