@@ -155,7 +155,7 @@ body {
   float: left;
   overflow: hidden;
   background-color: #E8E8E8;
-  background-image: url(/assets/comigo-assets/other/screen_demo.jpg);
+  background-image: url(../assets/comigo-assets/other/screen_demo.jpg);
   background-position: 30px 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -668,7 +668,7 @@ section.interactive-list h4 {
 }
 
 .your-content-comigo {
-  background-image: url(/assets/comigo-assets/other/screen_whos_on.jpg);
+  background-image: url(../assets/comigo-assets/other/screen_whos_on.jpg);
   background-size: 60% auto;
   background-position: 115%;
   background-repeat: no-repeat;
@@ -1331,7 +1331,7 @@ section.interactive-list h4 {
   }
 
   .your-content-comigo {
-    background-image: url(/assets/comigo-assets/other/screen_whos_on.jpg);
+    background-image: url(../assets/comigo-assets/other/screen_whos_on.jpg);
     background-size: 80% auto;
     background-position: 50% 10%;
     background-repeat: no-repeat;
@@ -1380,7 +1380,7 @@ section.interactive-list h4 {
     top: 490px;
     left: 0;
     background-color: #E8E8E8;
-    background-image: url(/assets/comigo-assets/other/screen_demo.jpg);
+    background-image: url(../assets/comigo-assets/other/screen_demo.jpg);
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: contain;
