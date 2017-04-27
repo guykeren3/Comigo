@@ -581,10 +581,15 @@ section.interactive-list h4 {
   transform: scale(1.2);
 }
 
+.interactive-list li.interactive-list-item-customize figcaption {
+  padding-left: 100px;
+  width: 50px;
+}
+
 /*Service boxes section*/
 .service-boxes {
   display: block;
-  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONE NEXT TO EACHOTHER*/
+  /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONE NEXT TO EACH OTHER*/
 }
 
 .service-box-tv {
