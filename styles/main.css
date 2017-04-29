@@ -1441,7 +1441,7 @@ section.interactive-list h4 {
     height: 25%;
     float: none;
     background-color: #EFEFEF;
-    margin-top: 650px;
+    margin-top: 680px; /* effects the gap between the links and the schedule a demo div */
     padding-left: 2%;
   }
 
