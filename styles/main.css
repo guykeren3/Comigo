@@ -1100,7 +1100,6 @@ section.interactive-list h4 {
   }
 
   /*interactive list section*/
-
   .interactive-list {
     background: rgba(0, 0, 0, 5);
     height: 150vw;
@@ -1485,7 +1484,6 @@ section.interactive-list h4 {
   }
 
   /*blog section breakpoint*/
-
   .blog {
     clear: both;
   }
@@ -1495,15 +1493,21 @@ section.interactive-list h4 {
   }
 
   .our-blog h4 {
-    margin: 0;
-    font-size: 4rem;
+    margin: 0 auto;
+    font-size: 2.5rem;
     font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-bottom: 20px;
   }
 
   .our-blog p {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 30px;
+    padding-left: 10px;
   }
 
   .blog-pic li:not(.our-blog) span {
@@ -1520,38 +1524,6 @@ section.interactive-list h4 {
     text-align: center;
   }
 
-  .blog {
-    height: 35vw;
-  }
-
-  .blog-pic {
-    height: 100%;
-  }
-
-  .blog li {
-    width: 16.666666%;
-    height: 100%;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    transition-property: transform;
-    transition-duration: .5s;
-  }
-
-  .blog li:hover {
-    transform: scale(1.1);
-    z-index: 10;
-  }
-
-  .blog-pic a {
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    color: white;
-    height: 100%;
-    width: 100%;
-  }
-
   .blog-pic div {
     position: absolute;
     bottom: 0;
@@ -1563,7 +1535,6 @@ section.interactive-list h4 {
   }
 
   /*moving the div on hover*/
-
   .blog-pic li:not(.our-blog):hover div {
     position: absolute;
     bottom: 0;
@@ -1571,32 +1542,10 @@ section.interactive-list h4 {
     transform: translateY(-50px);
   }
 
-  .our-blog div {
-    padding-bottom: 20px;
-    line-height: 70px;
-    width: 60%;
-  }
-
-  .comigo-experience {
-    background: url(../assets/comigo-assets/blog/ibc_post_EI-750x508.png) no-repeat center center;
-  }
-
-  .what-we-learned {
-    background: url(../assets/comigo-assets/blog/IMG_9294-750x563.jpeg) no-repeat center center;
-  }
-
-  .big-data {
-    background: url(../assets/comigo-assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat center center;
-  }
-
   .interent-power {
     background: url(../assets/comigo-assets/blog/post_tv_connect-750x508.jpeg) no-repeat center center;
     background-size: cover;
     background-position: 0;
-  }
-
-  .quality {
-    background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
   }
 
 }
