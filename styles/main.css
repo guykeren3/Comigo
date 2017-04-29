@@ -1640,8 +1640,585 @@ section.interactive-list h4 {
     padding-top: 50px;
     margin-bottom: 0;
   }
+}
 
+@media (max-width: 375px) {
 
+  /*Primary headline*/
+  .primary-headline {
+    height: 110vw;
+    background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: 60% 0;
+    padding-top: 2%;
+  }
+
+  /*interactive list section*/
+  .interactive-list {
+    background: rgba(0, 0, 0, 5);
+    height: 350vw;
+  }
+
+  .interactive-list figure {
+    width: 100%;
+  }
+
+  section.interactive-list figcaption {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    outline: 1px solid red;
+    font-size: 1.3rem;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  #customize figcaption {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    outline: 1px solid red;
+    font-size: 1.3rem;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .interactive-list header {
+    color: white;
+    width: 95%; /* EFFECTS THE TWO BOXES BELOW */
+    padding-left: 15px;
+    padding-top: 50px;
+    text-align: center;
+    display: inline-block;
+    float: none;
+  }
+
+  .interactive-list header span {
+    display: inline;
+  }
+
+  .interactive-list.clearfix header h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 100%;
+  }
+
+  .interactive-list.clearfix header p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .interactive-list h4 {
+    line-height: 15px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  .interactive-list ul {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    /*outline: 1px solid red;*/
+    float: none;
+  }
+
+  .interactive-list.clearfix ul h4 {
+    font-size: 2rem;
+  }
+
+  .interactive-list li > ul {
+    padding-left: 40%;
+  }
+
+  .interactive-list ul a {
+    display: block;
+  }
+
+  .interactive-list > ul {
+    position: relative;
+  }
+
+  .interactive-list li > ul {
+    display: none;
+  }
+
+  .interactive-list li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 370px;
+    left: -165px;
+    color: #C1C1C1;
+    width: 100%;
+  }
+
+  .interactive-list .interactive-list-item-soccer-player img {
+    display: block;
+    height: 90%;
+    width: 70%; /* effects both the location of the image and the size if decreased */
+    margin-left: 35%;
+    margin-right: 0;
+    margin-top: 100%;
+    transform: scale(1.3);
+  }
+
+  .interactive-list .interactive-list-item-participation img {
+    display: block;
+    height: 90%;
+    width: 90%;
+    margin-top: 100%;
+    margin-left: 25%;
+    margin-right: 10%;
+    transform: scale(1.5);
+  }
+
+  .interactive-list .interactive-list-item-soldiers img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+    padding-top: 70%;
+    margin-left: 5%;
+    /*outline: 1px solid red;*/
+  }
+
+  .interactive-list .interactive-list-item-robots img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    transform: scale(1);
+    margin-top: 80%;
+    margin-left: 30%;
+    /*outline: 1px solid red;*/
+  }
+
+  .interactive-list .interactive-list-item-advertising img {
+    display: block;
+    padding-top: 0;
+    margin-left: 0;
+    padding-right: 20%;
+    margin-top: 60%;
+    transform: scale(.8);
+  }
+
+  .interactive-list .interactive-list-item-customize img {
+    display: block;
+    padding-top: 0;
+    margin-left: 0;
+    margin-top: 50%;
+    transform: scale(.8);
+  }
+
+  /*Service boxes section query*/
+  .service-boxes {
+    display: block;
+    /*when minimizing screen inline-block solves the problem that the two cubes are not one next to another*/
+  }
+
+  .service-box-tv {
+    display: block;
+    height: 550px;
+    background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
+    background-size: 70vw, 100vw;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 70px 0px, center center;
+    width: 100%;
+    float: none;
+  }
+
+  .service-box-tv-text-wrapper {
+    text-align: center;
+    color: white;
+    padding-top: 340px;
+    padding-left: 0;
+    padding-right: 40px;
+    line-height: 40px;
+  }
+
+  .service-box-android {
+    display: block;
+    height: 550px;
+    background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
+    background-size: 45%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 190px 10px, center center;
+    width: 100%;
+    float: none;
+  }
+
+  /*.services-box-2 */
+  .service-box-android-text-wrapper {
+    text-align: center;
+    padding-top: 340px;
+    padding-left: 0;
+    line-height: 40px;
+  }
+
+  .service-box-tv-text-wrapper span,
+  .service-box-android-text-wrapper span {
+    display: block;
+  }
+
+  .your-content-comigo {
+    background-image: url(../assets/comigo-assets/other/screen_whos_on.jpg);
+    background-size: 80% auto;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    height: 705px;
+  }
+
+  .your-content-comigo .content-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 440px;
+  }
+
+  .your-content-comigo .content-wrapper h3 {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+
+  .your-content-comigo .content-wrapper p {
+    font-size: 1.1rem;
+    color: #818181;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  /*Learn more and Schedule a demo query*/
+  .learn-more-links {
+    position: relative;
+  }
+
+  .learn-more-links-left-container {
+    width: 100%;
+    height: 100vw;
+    margin-bottom: 1000px;
+    float: none;
+    background-color: #F9F9F9;
+  }
+
+  .learn-more-links-right-container {
+    width: 100%;
+    height: 100vw;
+    float: none;
+    overflow: hidden;
+    position: absolute; /* used to position the the schedule a meeting container above the links because it is written the other way in html */
+    top: 490px;
+    left: 0;
+    background-color: #E8E8E8;
+    background-image: url(../assets/comigo-assets/other/screen_demo.jpg);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-property: transform, box-shadow;
+    transition-duration: .3s
+  }
+
+  .learn-more-links-right-container:hover {
+    transform: scale(1.03);
+    box-shadow: -5px 10px 25px 0 rgba(0, 0, 0, .4);
+    position: absolute;
+    z-index: 10;
+  }
+
+  .learn-more-links-right-container a {
+    display: block;
+    height: 100%;
+  }
+
+  .learn-more-headline {
+    width: 100%;
+    height: 20%;
+    float: none;
+    text-align: center;
+  }
+
+  .download-brochure-block {
+    width: 100%;
+    height: 50%;
+    float: none;
+  }
+
+  .download-link {
+    display: block;
+    height: 100%;
+    /*width: 90%;*/
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 0;
+  }
+
+  .download-link span {
+    display: inline;
+    /*width: 90%;*/
+    /*padding-left;*/
+  }
+
+  .learn-more-headline h3 {
+    color: #3D3D3D;
+    font-size: 3.8rem;
+    padding-top: 0;
+    padding-left: 0;
+    line-height: 4rem;
+  }
+
+  .social-links-wrapper {
+    width: 100%;
+    height: 25%;
+    float: none;
+    background-color: #EFEFEF;
+    margin-top: 680px; /* effects the gap between the links and the schedule a demo div */
+    padding-left: 2%;
+  }
+
+  .social-links-container {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .schedule-meeting-wrapper {
+    width: 100%;
+    height: 60%;
+    float: none;
+    background-image: url(../assets/comigo-assets/other/img-event-IBC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8E8E8;
+    transition-property: transform;
+    transition-duration: .3s
+  }
+
+  .schedule-meeting-wrapper:hover {
+    transform: scale(1.03);
+    color: black;
+  }
+
+  .schedule-meeting-wrapper h3 {
+    font-size: 1.5rem;
+    width: 55%;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
+  .schedule-meeting-wrapper img {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
+  .learn-more-links-right-container h3 {
+    font-size: 4rem;
+    width: 70%;
+    padding-top: 10px;
+    padding-left: 30px;
+    color: #3D3D3D;
+    line-height: 100%;
+  }
+
+  .learn-more-links-right-container img {
+    padding-left: 30px;
+    width: 99%;
+    height: 70%;
+  }
+
+  /*Download link*/
+  .learn-more-links .download-link,
+  .download-link:hover {
+    color: #FFFEFE;
+    background-color: #F14848;
+  }
+
+  /*blog section breakpoint*/
+  .blog {
+    clear: both;
+  }
+
+  .our-blog div span {
+    display: block;
+  }
+
+  .our-blog h4 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-bottom: 20px;
+  }
+
+  .our-blog p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+
+  .blog-pic li:not(.our-blog) span {
+    /*display: inline-block;*/
+    background-color: #F14848;
+    text-transform: uppercase;
+    outline: 1px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .blog-pic div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: .6s;
+    transition-delay: .2s;
+  }
+
+  /*moving the div on hover*/
+  .blog-pic li:not(.our-blog):hover div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-50px);
+  }
+
+  .interent-power {
+    background: url(../assets/comigo-assets/blog/post_tv_connect-750x508.jpeg) no-repeat center center;
+    background-size: cover;
+    background-position: 0;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #3D3D3D;
+    background-size: cover;
+    clear: both;
+  }
+
+  .terms-privacy {
+    background-color: #1E2024;
+  }
+
+  .center-footer {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .subfooter-container-left {
+    width: 100%;
+    float: left;
+    outline: 1px solid red;
+    text-align: center;
+    padding-right: 0;
+
+  }
+
+  span.copy-write {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 3%;
+    display: inline-block;
+  }
+
+  .subfooter-floater-left {
+    width: 100%;
+    padding-left: 20%;
+  }
+
+  .subfooter-floater-left li {
+    float: left;
+    padding-right: 8%;
+  }
+
+  .site-footer a {
+    color: gray;
+    line-height: 30px;
+  }
+
+  .center-footer a {
+    text-transform: uppercase;
+  }
+
+  .site-footer a:hover {
+    color: #F14848;
+  }
+
+  .site-footer .center-footer .list-container-footer > ul > li > a {
+    color: white;
+    line-height: 50px;
+  }
+
+  .list-container-footer {
+    width: 100%;
+    height: 40vw;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .list-container-footer > ul {
+    width: 33%;
+    float: left;
+    padding-top: 4%;
+  }
+
+  .footer-logo-container {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .footer-logo {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  /*subfooter*/
+  .terms-privacy {
+    color: rgb(99, 99, 99);
+    background-color: rgb(21, 21, 21);
+    padding-bottom: 0;
+  }
+
+  .terms-privacy a {
+    color: rgb(99, 99, 99);
+    background-color: rgb(21, 21, 21);
+  }
+
+  .terms-privacy a:hover {
+    color: white;
+  }
+
+  .fatlady-container {
+    text-align: center;
+  }
+
+  .social-links-footer-wrapper {
+    transform: scale(0.3);
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
 }
 
 /*interactive list text section query*/
