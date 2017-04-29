@@ -1119,7 +1119,8 @@ section.interactive-list h4 {
     transform: translateY(-3px) scale(1.2);
   }
 
-  /*Video section*/
+  /*interactive list section*/
+
   .interactive-list {
     background: rgba(0, 0, 0, 5);
     height: 150vw;
@@ -1273,6 +1274,10 @@ section.interactive-list h4 {
     transform: scale(.8);
   }
 
+  .interactive-list .interactive-list-item-customize figure {
+    width: 100%;
+  }
+
   /*Service boxes section query*/
   .service-boxes {
     display: block;
@@ -1413,7 +1418,7 @@ section.interactive-list h4 {
     font-size: 2.4rem;
     font-weight: 400;
     text-align: center;
-    padding-top: 35%;
+    padding-top: 20%;
     padding-left: 0;
   }
 
