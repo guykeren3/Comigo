@@ -317,7 +317,7 @@ footer {
   background-color: #1E2024;
 }
 
-.center {
+.center-footer {
   width: 90%;
   max-width: 1050px;
   margin: 0 auto;
@@ -329,12 +329,9 @@ footer {
   /*outline: 1px solid red;*/
 }
 
-.subfooter-floater-left {
-  float: left;
-}
-
-span.subfooter-floater-left {
+span.copy-write {
   padding-right: 5%;
+  float: left;
 }
 
 .subfooter-floater-left li {
@@ -347,7 +344,7 @@ span.subfooter-floater-left {
   line-height: 30px;
 }
 
-.center a {
+.center-footer a {
   text-transform: uppercase;
 }
 
@@ -355,18 +352,18 @@ span.subfooter-floater-left {
   color: #F14848;
 }
 
-.site-footer .center .list-container > ul > li > a {
+.site-footer .center-footer .list-container-footer > ul > li > a {
   color: white;
   line-height: 50px;
 }
 
-.list-container {
+.list-container-footer {
   width: 80%;
   height: 21vw;
   display: inline-block;
 }
 
-.list-container > ul {
+.list-container-footer > ul {
   width: 33%;
   float: left;
   padding-top: 4%;
@@ -378,18 +375,7 @@ span.subfooter-floater-left {
 }
 
 /*subfooter*/
-.subfooter {
-  /*float: left;*/
-}
 
-/*.site-footer a:hover {*/
-/*color: #F14848;*/
-/*}*/
-/*.footer-nav-list-1 a,*/
-/*.footer-nav-list-2 a {*/
-/*color: rgb(122, 122, 122);*/
-/*}*/
-/*The method above describes the other way of making the lower footer - all to color white and then target a few and turn grey*/
 .terms-privacy {
   color: rgb(99, 99, 99);
   background-color: rgb(21, 21, 21);
@@ -406,9 +392,10 @@ span.subfooter-floater-left {
 }
 
 /*Primary Headline*/
+
 .primary-headline {
   /*divided the picture original ratio
-  ( width divided by height then remember vw is % so if it says 0.38, it's 38vw. ) to find out the height to width ratio and then put it in height with vw because theres a ratio between the height and width, they are depended in one another and then background size cover.*/
+  ( width divided by height then remember vw is % so if it says 0.38, it's 38vw. ) to find out the height to width ratio and then put it in height with vw because theres a ratio between the height and width, they are depended on one another and then background size cover.*/
   height: 38.322vw;
   background-image: url("../assets/comigo-assets/other/homepage-featured-new-1920x745.jpg");
   /*background-repeat: no-repeat;*/
@@ -817,7 +804,7 @@ section.interactive-list h4 {
 
 /*Responsive footer*/
 @media (max-width: 990px) {
-  .center {
+  .center-footer {
     max-width: 660px;
   }
 }
@@ -1177,7 +1164,6 @@ section.interactive-list h4 {
     left: -165px;
     color: #C1C1C1;
     width: 100%;
-    /*outline: 1px solid red;*/
   }
 
   .interactive-list figcaption {
@@ -1185,18 +1171,12 @@ section.interactive-list h4 {
     text-align: center;
     padding-bottom: 0;
     width: 125%;
-    /*outline: 1px solid red;*/
-  }
-
-  .interactive-list figure {
-    /*margin-right: 10%;*/
   }
 
   .interactive-list-item-soccer-player figcaption,
   .interactive-list-item-participation figcaption,
   .interactive-list-item-soldiers figcaption,
   .interactive-list-item-advertising figcaption {
-    /*width: 200%;*/
   }
 
   .interactive-list .interactive-list-item-soccer-player img {
@@ -1260,7 +1240,7 @@ section.interactive-list h4 {
   /*Service boxes section query*/
   .service-boxes {
     display: block;
-    /*WHEN MINIMIZING SCREEN ONLINE INLINE-BLOCK SOLVES THE PROBLEM THAT THE TWO CUBES ARE NOT ONEO NEXT TO EACHOTHER*/
+    /*when minimizing screen inline-block solves the problem that the two cubes are not one next to another*/
   }
 
   .service-box-tv {
@@ -1547,6 +1527,120 @@ section.interactive-list h4 {
     background-size: cover;
     background-position: 0;
   }
+
+  /*footer*/
+  footer {
+    background-color: #3D3D3D;
+    background-size: cover;
+    clear: both;
+  }
+
+  .terms-privacy {
+    background-color: #1E2024;
+  }
+
+  .center-footer {
+    width: 90%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .subfooter-container-left {
+    width: 100%;
+    float: left;
+    outline: 1px solid red;
+    text-align: center;
+    padding-right: 0;
+
+  }
+
+  span.copy-write {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 3%;
+    display: inline-block;
+  }
+
+  .subfooter-floater-left {
+    width: 100%;
+    padding-left: 20%;
+  }
+
+  .subfooter-floater-left li {
+    float: left;
+    padding-right: 8%;
+  }
+
+  .site-footer a {
+    color: gray;
+    line-height: 30px;
+  }
+
+  .center-footer a {
+    text-transform: uppercase;
+  }
+
+  .site-footer a:hover {
+    color: #F14848;
+  }
+
+  .site-footer .center-footer .list-container-footer > ul > li > a {
+    color: white;
+    line-height: 50px;
+  }
+
+  .list-container-footer {
+    width: 100%;
+    height: 40vw;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .list-container-footer > ul {
+    width: 33%;
+    float: left;
+    padding-top: 4%;
+  }
+
+  .footer-logo-container {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .footer-logo {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  /*subfooter*/
+  .terms-privacy {
+    color: rgb(99, 99, 99);
+    background-color: rgb(21, 21, 21);
+    padding-bottom: 0;
+  }
+
+  .terms-privacy a {
+    color: rgb(99, 99, 99);
+    background-color: rgb(21, 21, 21);
+  }
+
+  .terms-privacy a:hover {
+    color: white;
+  }
+
+  .fatlady-container {
+    text-align: center;
+  }
+
+  .social-links-footer-wrapper {
+    transform: scale(0.3);
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+
 
 }
 
