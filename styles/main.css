@@ -727,18 +727,6 @@ section.interactive-list h4 {
   text-align: center;
 }
 
-/*.blog-pic li:not(.our-blog):hover span {*/
-/*top: -50%;*/
-/*right: 0;*/
-/*}*/
-
-/*!*The selector below refers to what we learned blog and quality read more spans, lines them up in the same row as the others overflowen spans*!*/
-
-/*.blog-pic li:nth-child(3n+3):hover span {*/
-/*top: -120%;*/
-/*right: 0;*/
-/*}*/
-
 .blog {
   height: 35vw;
 }
@@ -762,14 +750,6 @@ section.interactive-list h4 {
   z-index: 10;
 }
 
-/*.blog-pic div {*/
-/*color: white;*/
-/*bottom: 20px;*/
-/*left: 25px;*/
-/*width: 100%;*/
-/*height: 100%;*/
-/*!*line-height: 60px;*!*/
-/*}*/
 .blog-pic a {
   bottom: 0;
   left: 0;
@@ -791,7 +771,7 @@ section.interactive-list h4 {
 
 /*moving the div on hover*/
 
-.blog-pic li:hover div {
+.blog-pic li:not(.our-blog):hover div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1450,6 +1430,7 @@ section.interactive-list h4 {
     text-align: center;
     vertical-align: middle;
   }
+
   .schedule-meeting-wrapper {
     width: 100%;
     height: 60%;
@@ -1503,9 +1484,124 @@ section.interactive-list h4 {
     background-color: #F14848;
   }
 
+  /*blog section breakpoint*/
+
+  .blog {
+    clear: both;
+  }
+
+  .our-blog div span {
+    display: block;
+  }
+
+  .our-blog h4 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .our-blog p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .blog-pic li:not(.our-blog) span {
+    /*display: inline-block;*/
+    background-color: #F14848;
+    text-transform: uppercase;
+    outline: 1px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .blog {
+    height: 35vw;
+  }
+
+  .blog-pic {
+    height: 100%;
+  }
+
+  .blog li {
+    width: 16.666666%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition-property: transform;
+    transition-duration: .5s;
+  }
+
+  .blog li:hover {
+    transform: scale(1.1);
+    z-index: 10;
+  }
+
+  .blog-pic a {
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    color: white;
+    height: 100%;
+    width: 100%;
+  }
+
+  .blog-pic div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: .6s;
+    transition-delay: .2s;
+  }
+
+  /*moving the div on hover*/
+
+  .blog-pic li:not(.our-blog):hover div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(-50px);
+  }
+
+  .our-blog div {
+    padding-bottom: 20px;
+    line-height: 70px;
+    width: 60%;
+  }
+
+  .comigo-experience {
+    background: url(../assets/comigo-assets/blog/ibc_post_EI-750x508.png) no-repeat center center;
+  }
+
+  .what-we-learned {
+    background: url(../assets/comigo-assets/blog/IMG_9294-750x563.jpeg) no-repeat center center;
+  }
+
+  .big-data {
+    background: url(../assets/comigo-assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat center center;
+  }
+
+  .interent-power {
+    background: url(../assets/comigo-assets/blog/post_tv_connect-750x508.jpeg) no-repeat center center;
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .quality {
+    background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
+  }
+
 }
 
-/*Video section query*/
+/*interactive list text section query*/
 
 @media (max-width: 1080px) {
   .interactive-list header h3 {
