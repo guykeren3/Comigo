@@ -1805,7 +1805,7 @@ section.interactive-list h4 {
     margin-left: 0;
     padding-right: 20%;
     margin-top: 60%;
-    transform: scale(.8);
+    transform: scale(.6);
   }
 
   .interactive-list .interactive-list-item-customize img {
@@ -1824,11 +1824,11 @@ section.interactive-list h4 {
 
   .service-box-tv {
     display: block;
-    height: 550px;
+    height: 600px;
     background: url(../assets/comigo-assets/other/ic_EI_cloud_2_home_page.png), url(../assets/comigo-assets/other/home-tv-service-bg1.png);
-    background-size: 70vw, 100vw;
+    background-size: 90vw, 350vw;
     background-repeat: no-repeat, no-repeat;
-    background-position: 70px 0px, center center;
+    background-position: 0 60px, center center;
     width: 100%;
     float: none;
   }
@@ -1844,26 +1844,13 @@ section.interactive-list h4 {
 
   .service-box-android {
     display: block;
-    height: 550px;
+    height: 600px;
     background: url(../assets/comigo-assets/other/ic-stb-screens.png), url(../assets/comigo-assets/other/home-tv-service-bg2.png);
-    background-size: 45%, cover;
+    background-size: 60%, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: 190px 10px, center center;
+    background-position: 70px 50px, center center;
     width: 100%;
     float: none;
-  }
-
-  /*.services-box-2 */
-  .service-box-android-text-wrapper {
-    text-align: center;
-    padding-top: 340px;
-    padding-left: 0;
-    line-height: 40px;
-  }
-
-  .service-box-tv-text-wrapper span,
-  .service-box-android-text-wrapper span {
-    display: block;
   }
 
   .your-content-comigo {
@@ -1871,27 +1858,14 @@ section.interactive-list h4 {
     background-size: 80% auto;
     background-position: 50% 10%;
     background-repeat: no-repeat;
-    height: 705px;
+    height: 900px;
   }
 
   .your-content-comigo .content-wrapper {
     width: 100%;
     text-align: center;
     padding-left: 0;
-    padding-top: 440px;
-  }
-
-  .your-content-comigo .content-wrapper h3 {
-    font-size: 3.5rem;
-    line-height: 60px;
-  }
-
-  .your-content-comigo .content-wrapper p {
-    font-size: 1.1rem;
-    color: #818181;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 320px;
   }
 
   /*Learn more and Schedule a demo query*/
@@ -1901,7 +1875,7 @@ section.interactive-list h4 {
 
   .learn-more-links-left-container {
     width: 100%;
-    height: 100vw;
+    height: 300vw;
     margin-bottom: 1000px;
     float: none;
     background-color: #F9F9F9;
@@ -1909,7 +1883,7 @@ section.interactive-list h4 {
 
   .learn-more-links-right-container {
     width: 100%;
-    height: 100vw;
+    height: 120vw;
     float: none;
     overflow: hidden;
     position: absolute; /* used to position the the schedule a meeting container above the links because it is written the other way in html */
@@ -1979,7 +1953,7 @@ section.interactive-list h4 {
     height: 25%;
     float: none;
     background-color: #EFEFEF;
-    margin-top: 680px; /* effects the gap between the links and the schedule a demo div */
+    margin-top: 150px; /* effects the gap between the links and the schedule a demo div */
     padding-left: 2%;
   }
 
@@ -1991,7 +1965,7 @@ section.interactive-list h4 {
 
   .schedule-meeting-wrapper {
     width: 100%;
-    height: 60%;
+    height: 35%;
     float: none;
     background-image: url(../assets/comigo-assets/other/img-event-IBC.jpg);
     background-position: center;
