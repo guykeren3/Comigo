@@ -837,7 +837,7 @@ section.interactive-list h4 {
 
 /*Media queries*/
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1440px) {
   /*interactive list section*/
   /*.interactive-list {*/
     /*background: rgba(0, 0, 0, 5);*/
