@@ -1871,6 +1871,7 @@ section.interactive-list h4 {
   /*Learn more and Schedule a demo query*/
   .learn-more-links {
     position: relative;
+    height: 1550px;
   }
 
   .learn-more-links-left-container {
