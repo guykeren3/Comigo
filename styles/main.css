@@ -925,63 +925,63 @@ section.interactive-list h4 {
     /*width: 125%;*/
   /*}*/
 
-  .interactive-list .interactive-list-item-soccer-player img {
-    display: block;
-    height: 90%;
-    width: 70%; /* effects both the location of the image and the size if decreased */
-    margin-left: 25%;
-    margin-top: 10%;
-    margin-right: 0;
-    transform: scale(.3);
-  }
-
-  .interactive-list .interactive-list-item-participation img {
-    display: block;
-    height: 90%;
-    width: 90%;
-    margin-top: 20%;
-    margin-left: 25%;
-    margin-right: 10%;
-    transform: scale(1.5);
-  }
-
-  .interactive-list .interactive-list-item-soldiers img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    transform: scale(.3);
-    padding-top: 10%;
-    margin-left: 5%;
-    /*outline: 1px solid red;*/
-  }
-
-  .interactive-list .interactive-list-item-robots img {
-    display: block;
-    width: 80%;
-    height: 80%;
-    transform: scale(.3);
-    margin-top: 10%;
-    margin-left: 20%;
-    /*outline: 1px solid red;*/
-  }
-
-  .interactive-list .interactive-list-item-advertising img {
-    display: block;
-    padding-top: 0;
-    margin-left: 2%;
-    transform: scale(.8);
-  }
-
-  .interactive-list .interactive-list-item-customize img {
-    display: block;
-    padding-top: 0;
-    margin-left: 10%;
-    transform: scale(.8);
-  }
-
-  /*.interactive-list .interactive-list-item-customize figure {*/
-    /*width: 100%;*/
+  /*.interactive-list .interactive-list-item-soccer-player img {*/
+    /*display: block;*/
+    /*height: 90%;*/
+    /*width: 70%; !* effects both the location of the image and the size if decreased *!*/
+    /*margin-left: 25%;*/
+    /*margin-top: 10%;*/
+    /*margin-right: 0;*/
+    /*transform: scale(.3);*/
   /*}*/
+
+  /*.interactive-list .interactive-list-item-participation img {*/
+    /*display: block;*/
+    /*height: 90%;*/
+    /*width: 90%;*/
+    /*margin-top: 20%;*/
+    /*margin-left: 25%;*/
+    /*margin-right: 10%;*/
+    /*transform: scale(1.5);*/
+  /*}*/
+
+  /*.interactive-list .interactive-list-item-soldiers img {*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*transform: scale(.3);*/
+    /*padding-top: 10%;*/
+    /*margin-left: 5%;*/
+    /*!*outline: 1px solid red;*!*/
+  /*}*/
+
+  /*.interactive-list .interactive-list-item-robots img {*/
+    /*display: block;*/
+    /*width: 80%;*/
+    /*height: 80%;*/
+    /*transform: scale(.3);*/
+    /*margin-top: 10%;*/
+    /*margin-left: 20%;*/
+    /*!*outline: 1px solid red;*!*/
+  /*}*/
+
+  /*.interactive-list .interactive-list-item-advertising img {*/
+    /*display: block;*/
+    /*padding-top: 0;*/
+    /*margin-left: 2%;*/
+    /*transform: scale(.8);*/
+  /*}*/
+
+  /*.interactive-list .interactive-list-item-customize img {*/
+    /*display: block;*/
+    /*padding-top: 0;*/
+    /*margin-left: 10%;*/
+    /*transform: scale(.8);*/
+  /*}*/
+
+  /*!*.interactive-list .interactive-list-item-customize figure {*!*/
+    /*!*width: 100%;*!*/
+  /*!*}*!*/
 
 }
 
