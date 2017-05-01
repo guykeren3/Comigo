@@ -791,6 +791,9 @@ section.interactive-list h4 {
   background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
 }
 
+.social-links-container {
+  transform: scale(.5);
+}
 /*Removing nav menu under 700px wide*/
 @media (max-width: 700px) {
 
