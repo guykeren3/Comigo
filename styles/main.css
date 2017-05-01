@@ -2185,10 +2185,14 @@ section.interactive-list h4 {
   }
 
   .footer-logo {
+    transform: scale(.7);
     float: none;
     display: inline-block;
     margin: 0 auto;
     padding-top: 0;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
   }
 
   /*subfooter*/
