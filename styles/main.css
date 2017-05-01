@@ -1077,6 +1077,11 @@ section.interactive-list h4 {
     background-size: cover;
   }
 
+  .what-we-learned div span {
+    display: inline-block;
+    width: 500px;
+  }
+
   .big-data {
     background: url(../assets/comigo-assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat center center;
     background-size: cover;
