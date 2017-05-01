@@ -884,129 +884,10 @@ section.interactive-list h4 {
 
 @media screen and (min-width: 1450px) {
   /*interactive list section*/
-  /*.interactive-list {*/
-  /*background: rgba(0, 0, 0, 5);*/
-  /*height: 150vw;*/
-  /*}*/
-  /*.interactive-list header {*/
-  /*color: white;*/
-  /*width: 95%; !* EFFECTS THE TWO BOXES BELOW *!*/
-  /*padding-left: 15px;*/
-  /*padding-top: 50px;*/
-  /*text-align: center;*/
-  /*!*padding-right: 400px;*!*/
-  /*display: inline-block;*/
-  /*float: none;*/
-  /*}*/
-  /*.interactive-list header span {*/
-  /*display: inline;*/
-  /*}*/
-  /*.interactive-list.clearfix header h3 {*/
-  /*font-size: 2.5rem;*/
-  /*font-weight: 300;*/
-  /*line-height: 100%;*/
-  /*}*/
-  /*.interactive-list.clearfix header p {*/
-  /*font-size: 1.8rem;*/
-  /*font-weight: 300;*/
-  /*padding-top: 20px;*/
-  /*width: 100%;*/
-  /*text-align: center;*/
-  /*}*/
-  /*.interactive-list h4 {*/
-  /*line-height: 15px;*/
-  /*font-size: 1.7rem;*/
-  /*text-transform: uppercase;*/
-  /*}*/
-  /*.interactive-list ul {*/
-  /*display: inline-block;*/
-  /*width: 100%;*/
-  /*padding-left: 0;*/
-  /*padding-top: 0;*/
-  /*text-align: center;*/
-  /*!*outline: 1px solid red;*!*/
-  /*float: none;*/
-  /*}*/
-  /*.interactive-list.clearfix ul h4 {*/
-  /*font-size: 2rem;*/
-  /*}*/
-  /*.interactive-list li > ul {*/
-  /*padding-left: 40%;*/
-  /*}*/
-  /*.interactive-list ul a {*/
-  /*display: block;*/
-  /*}*/
-  /*.interactive-list > ul {*/
-  /*position: relative;*/
-  /*}*/
-  /*.interactive-list li > ul {*/
-  /*display: none;*/
-  /*}*/
-  /*.interactive-list li:hover > ul {*/
-  /*display: block;*/
-  /*position: absolute;*/
-  /*top: 370px;*/
-  /*left: -165px;*/
-  /*color: #C1C1C1;*/
-  /*width: 100%;*/
-  /*}*/
-  /*.interactive-list figcaption {*/
-  /*font-size: 1.3rem;*/
-  /*text-align: center;*/
-  /*padding-bottom: 0;*/
-  /*width: 125%;*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-soccer-player img {*/
-  /*display: block;*/
-  /*height: 90%;*/
-  /*width: 70%; !* effects both the location of the image and the size if decreased *!*/
-  /*margin-left: 25%;*/
-  /*margin-top: 10%;*/
-  /*margin-right: 0;*/
-  /*transform: scale(.3);*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-participation img {*/
-  /*display: block;*/
-  /*height: 90%;*/
-  /*width: 90%;*/
-  /*margin-top: 20%;*/
-  /*margin-left: 25%;*/
-  /*margin-right: 10%;*/
-  /*transform: scale(1.5);*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-soldiers img {*/
-  /*display: block;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*transform: scale(.3);*/
-  /*padding-top: 10%;*/
-  /*margin-left: 5%;*/
-  /*!*outline: 1px solid red;*!*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-robots img {*/
-  /*display: block;*/
-  /*width: 80%;*/
-  /*height: 80%;*/
-  /*transform: scale(.3);*/
-  /*margin-top: 10%;*/
-  /*margin-left: 20%;*/
-  /*!*outline: 1px solid red;*!*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-advertising img {*/
-  /*display: block;*/
-  /*padding-top: 0;*/
-  /*margin-left: 2%;*/
-  /*transform: scale(.8);*/
-  /*}*/
-  /*.interactive-list .interactive-list-item-customize img {*/
-  /*display: block;*/
-  /*padding-top: 0;*/
-  /*margin-left: 10%;*/
-  /*transform: scale(.8);*/
-  /*}*/
-  /*!*.interactive-list .interactive-list-item-customize figure {*!*/
-  /*!*width: 100%;*!*/
-  /*!*}*!*/
+
+  .interactive-list ul li figure img {
+    transform: scale(.2);
+  }
 
   /*blog section breakpoint*/
   .blog {
@@ -1077,9 +958,8 @@ section.interactive-list h4 {
     background-size: cover;
   }
 
-  .what-we-learned div span {
-    display: inline-block;
-    width: 500px;
+  .what-we-learned div {
+    width: 100%;
   }
 
   .big-data {
