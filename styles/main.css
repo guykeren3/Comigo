@@ -445,10 +445,9 @@ span.copy-write {
 
 .interactive-list header {
   color: white;
-  width: 25%; /* EFFECTS THE TWO BOXES BELOW */
+  width: 25%; /* effects the two boxes below */
   padding-left: 8%;
   padding-top: 4%;
-  /*padding-right: 400px;*/
   display: inline-block;
   float: left;
 }
@@ -807,6 +806,7 @@ section.interactive-list h4 {
 .copy-write {
   padding-top: 5px;
 }
+
 .terms-privacy {
   color: rgb(99, 99, 99);
   background-color: rgb(21, 21, 21);
@@ -834,7 +834,6 @@ section.interactive-list h4 {
   right: -200px;
   bottom: -40px;
 }
-
 
 /*Removing nav menu under 700px wide*/
 @media (max-width: 700px) {
@@ -884,7 +883,6 @@ section.interactive-list h4 {
 
 @media screen and (min-width: 1450px) {
   /*interactive list section*/
-
   .interactive-list figcaption {
     font-size: 1.3rem;
     text-align: center;
@@ -1057,8 +1055,6 @@ section.interactive-list h4 {
     background: url(../assets/comigo-assets/blog/post_quality-750x508.jpeg) no-repeat center center;
     background-size: cover;
   }
-
-
 
 }
 
@@ -1319,11 +1315,10 @@ section.interactive-list h4 {
 
   .interactive-list header {
     color: white;
-    width: 95%; /* EFFECTS THE TWO BOXES BELOW */
+    width: 95%; /* effects the two boxes below */
     padding-left: 15px;
     padding-top: 50px;
     text-align: center;
-    /*padding-right: 400px;*/
     display: inline-block;
     float: none;
   }
@@ -2089,74 +2084,69 @@ section.interactive-list h4 {
   }
 
   /*Learn more and Schedule a demo query*/
+  .learn-more-links-left-container {
+    position: relative;
+  }
+
   .learn-more-links {
     position: relative;
-    height: 1550px;
+    height: 1300px;
+  }
+
+  .learn-more-headline {
+    position: relative;
+    height: 200px;
+  }
+
+  .learn-more-headline h3 {
+    font-size: 3rem;
+  }
+
+  .download-brochure-block {
+    height: 100%;
+  }
+
+  .download-link {
+    font-size: 2.5rem;
+  }
+
+  .learn-more-links-right-container {
+    height: 450px;
+  }
+
+  .social-links-wrapper {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 10;
+    height: 20%;
+    margin-top: 0;
+    float: none;
+  }
+
+  .social-links-container {
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    z-index: 10;
+    width: 500px;
+    height: 20%;
+    margin-top: 0;
+    float: left;
+  }
+
+  .schedule-meeting-wrapper {
+    position: absolute;
+    top: 940px;
+    left: 0;
+    z-index: 10;
+    height: 100%;
   }
 
   /*blog section breakpoint*/
   .blog {
     clear: both;
-  }
-
-  .our-blog div span {
-    display: block;
-  }
-
-  .our-blog h4 {
-    margin: 0 auto;
-    font-size: 2.5rem;
-    font-weight: 300;
-    line-height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 5px;
-    padding-bottom: 20px;
-  }
-
-  .our-blog p {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 30px;
-    padding-left: 10px;
-  }
-
-  .blog-pic li:not(.our-blog) span {
-    /*display: inline-block;*/
-    background-color: #F14848;
-    text-transform: uppercase;
-    outline: 1px solid black;
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    text-align: center;
-  }
-
-  .blog-pic div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(0);
-    transition-property: transform;
-    transition-duration: .6s;
-    transition-delay: .2s;
-  }
-
-  /*moving the div on hover*/
-  .blog-pic li:not(.our-blog):hover div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translateY(-50px);
-  }
-
-  .interent-power {
-    background: url(../assets/comigo-assets/blog/post_tv_connect-750x508.jpeg) no-repeat center center;
-    background-size: cover;
-    background-position: 0;
+    display: none;
   }
 
   /*footer*/
@@ -2175,18 +2165,25 @@ section.interactive-list h4 {
   .subfooter-container-left {
     width: 100%;
     float: left;
-    outline: 1px solid red;
     text-align: center;
     padding-right: 0;
+  }
 
+  .privace-policy {
+    padding-left: 50px;
   }
 
   span.copy-write {
     float: none;
     width: 100%;
+    padding-left: 5px;
     padding-right: 0;
     margin-bottom: 3%;
     display: inline-block;
+  }
+
+  .fatlady-container {
+    padding-left: 20px;
   }
 
   .subfooter-floater-left {
