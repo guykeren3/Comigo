@@ -1814,7 +1814,7 @@ section.interactive-list h4 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
 
   /*Primary headline*/
   .primary-headline {
