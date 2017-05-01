@@ -2168,7 +2168,7 @@ section.interactive-list h4 {
 
   .list-container-footer {
     width: 100%;
-    height: 40vw;
+    height: 70vw;
     display: inline-block;
     text-align: center;
   }
@@ -2177,6 +2177,10 @@ section.interactive-list h4 {
     width: 33%;
     float: left;
     padding-top: 4%;
+  }
+
+  .list-container-footer > ul li {
+  font-size: .8rem;
   }
 
   .footer-logo-container {
@@ -2192,7 +2196,7 @@ section.interactive-list h4 {
     padding-top: 0;
     position: absolute;
     bottom: 0;
-    right: -5px;
+    right: 100px;
   }
 
   /*subfooter*/
