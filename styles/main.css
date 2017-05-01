@@ -1550,6 +1550,7 @@ section.interactive-list h4 {
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
+    transform: scale(.3);
   }
 
   .schedule-meeting-wrapper {
@@ -1778,7 +1779,7 @@ section.interactive-list h4 {
   }
 
   .social-links-footer-wrapper {
-    transform: scale(0.2);
+    transform: scale(0.3);
     padding-top: 50px;
     margin-bottom: 0;
   }
